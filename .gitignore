@@ -1,1 +1,9 @@
-models/
+models/# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data caches
+data/processed/
+*.npy
+*.pkl

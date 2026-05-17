@@ -43,15 +43,21 @@ PATHS = {
 
 # ── Column names ──────────────────────────────────────────────
 COLUMNS = {
-    "text": "comment",      # Raw text column in dataset
-    "label": "label",       # Target column (0 = non-toxic, 1 = toxic)
+    "text": "free_text",    # Raw text column in ViHSD
+    "label": "label_id",    # Target column (0=CLEAN, 1=OFFENSIVE, 2=HATE)
 }
 
 
-# ── Label mapping ─────────────────────────────────────────────
+# ── Label mapping (ViHSD - Luu et al., 2021) ──────────────────
 LABEL_MAP = {
-    0: "non-toxic",
-    1: "toxic",
+    0: "CLEAN",
+    1: "OFFENSIVE",
+    2: "HATE",
+}
+LABEL_COLORS = {
+    0: "#4CAF50",   # green
+    1: "#FF9800",   # orange
+    2: "#F44336",   # red
 }
 
 
