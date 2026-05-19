@@ -1,4 +1,5 @@
-models/# Python
+models/
+# Python
 .venv/
 __pycache__/
 *.pyc
