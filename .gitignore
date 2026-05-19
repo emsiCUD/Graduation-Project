@@ -1,5 +1,4 @@
 models/
-reports/figures/
 .venv/
 __pycache__/
 *.pyc
