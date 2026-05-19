@@ -1,11 +1,10 @@
-models/# Python
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Data caches
+# Data caches & generated artefacts
 data/processed/
 *.npy
 *.pkl
 models/vectorizers/
-data/processed/
