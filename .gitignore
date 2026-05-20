@@ -1,4 +1,4 @@
-models/
+# Virtual environment
 .venv/
 # Python
 __pycache__/
