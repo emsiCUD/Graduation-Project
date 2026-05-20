@@ -1,0 +1,197 @@
+{
+  "lr_search": {
+    "best_params": {
+      "C": 1,
+      "class_weight": "balanced",
+      "max_iter": 2000,
+      "penalty": "l2",
+      "solver": "lbfgs"
+    },
+    "cv_f1_macro": 0.6042852599657526,
+    "tuning_time_s": 12.8
+  },
+  "svm_search": {
+    "best_params": {
+      "C": 0.5,
+      "class_weight": "balanced",
+      "loss": "squared_hinge",
+      "max_iter": 3000
+    },
+    "cv_f1_macro": 0.6298099260231946,
+    "tuning_time_s": 2.5
+  },
+  "nb_search": {
+    "best_params": {
+      "alpha": 2.0,
+      "fit_prior": false
+    },
+    "cv_f1_macro": 0.6370663058373955,
+    "tuning_time_s": 0.42
+  },
+  "dev_metrics": {
+    "LR_baseline": {
+      "model": "LR_TFIDF_Balanced",
+      "accuracy": 0.7889221556886228,
+      "precision_macro": 0.5640778284799635,
+      "recall_macro": 0.66154284292046,
+      "f1_macro": 0.5970515318359505,
+      "precision_weighted": 0.844752628562544,
+      "recall_weighted": 0.7889221556886228,
+      "f1_weighted": 0.8098117339141521,
+      "precision_clean": 0.9475869226777374,
+      "recall_clean": 0.8337899543378996,
+      "f1_clean": 0.8870536798639787,
+      "precision_offensive": 0.329153605015674,
+      "recall_offensive": 0.49528301886792453,
+      "f1_offensive": 0.3954802259887006,
+      "precision_hate": 0.4154929577464789,
+      "recall_hate": 0.6555555555555556,
+      "f1_hate": 0.5086206896551724,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.95      0.83      0.89      2190\n   OFFENSIVE       0.33      0.50      0.40       212\n        HATE       0.42      0.66      0.51       270\n\n    accuracy                           0.79      2672\n   macro avg       0.56      0.66      0.60      2672\nweighted avg       0.84      0.79      0.81      2672\n",
+      "train_time": 4.275,
+      "inference_time": 0.251,
+      "model_kb": 235.1,
+      "confusion_matrix": [
+        [
+          1826,
+          166,
+          198
+        ],
+        [
+          56,
+          105,
+          51
+        ],
+        [
+          45,
+          48,
+          177
+        ]
+      ]
+    },
+    "LR_tuned_word": {
+      "model": "LR_tuned_word",
+      "accuracy": 0.7889221556886228,
+      "precision_macro": 0.5640778284799635,
+      "recall_macro": 0.66154284292046,
+      "f1_macro": 0.5970515318359505,
+      "precision_weighted": 0.844752628562544,
+      "recall_weighted": 0.7889221556886228,
+      "f1_weighted": 0.8098117339141521,
+      "precision_clean": 0.9475869226777374,
+      "recall_clean": 0.8337899543378996,
+      "f1_clean": 0.8870536798639787,
+      "precision_offensive": 0.329153605015674,
+      "recall_offensive": 0.49528301886792453,
+      "f1_offensive": 0.3954802259887006,
+      "precision_hate": 0.4154929577464789,
+      "recall_hate": 0.6555555555555556,
+      "f1_hate": 0.5086206896551724,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.95      0.83      0.89      2190\n   OFFENSIVE       0.33      0.50      0.40       212\n        HATE       0.42      0.66      0.51       270\n\n    accuracy                           0.79      2672\n   macro avg       0.56      0.66      0.60      2672\nweighted avg       0.84      0.79      0.81      2672\n",
+      "train_time": 12.791465053000024,
+      "inference_time": 0.0
+    },
+    "LR_tuned_char": {
+      "model": "LR_tuned_char",
+      "accuracy": 0.8184880239520959,
+      "precision_macro": 0.5929692198348915,
+      "recall_macro": 0.6733676038405942,
+      "f1_macro": 0.6232748697443354,
+      "precision_weighted": 0.8548469528058855,
+      "recall_weighted": 0.8184880239520959,
+      "f1_weighted": 0.8324758301009758,
+      "precision_clean": 0.9505494505494505,
+      "recall_clean": 0.8689497716894977,
+      "f1_clean": 0.9079198473282443,
+      "precision_offensive": 0.3656716417910448,
+      "recall_offensive": 0.46226415094339623,
+      "f1_offensive": 0.4083333333333333,
+      "precision_hate": 0.4626865671641791,
+      "recall_hate": 0.6888888888888889,
+      "f1_hate": 0.5535714285714286,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.95      0.87      0.91      2190\n   OFFENSIVE       0.37      0.46      0.41       212\n        HATE       0.46      0.69      0.55       270\n\n    accuracy                           0.82      2672\n   macro avg       0.59      0.67      0.62      2672\nweighted avg       0.85      0.82      0.83      2672\n",
+      "train_time": 7.65829684299996,
+      "inference_time": 0.0
+    },
+    "LR_char_thresh": {
+      "model": "LR_char_thresh(off=1.0,hate=1.0)",
+      "accuracy": 0.8184880239520959,
+      "precision_macro": 0.5929692198348915,
+      "recall_macro": 0.6733676038405942,
+      "f1_macro": 0.6232748697443354,
+      "precision_weighted": 0.8548469528058855,
+      "recall_weighted": 0.8184880239520959,
+      "f1_weighted": 0.8324758301009758,
+      "precision_clean": 0.9505494505494505,
+      "recall_clean": 0.8689497716894977,
+      "f1_clean": 0.9079198473282443,
+      "precision_offensive": 0.3656716417910448,
+      "recall_offensive": 0.46226415094339623,
+      "f1_offensive": 0.4083333333333333,
+      "precision_hate": 0.4626865671641791,
+      "recall_hate": 0.6888888888888889,
+      "f1_hate": 0.5535714285714286,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.95      0.87      0.91      2190\n   OFFENSIVE       0.37      0.46      0.41       212\n        HATE       0.46      0.69      0.55       270\n\n    accuracy                           0.82      2672\n   macro avg       0.59      0.67      0.62      2672\nweighted avg       0.85      0.82      0.83      2672\n",
+      "train_time": 0.0,
+      "inference_time": 0.0
+    },
+    "SVM_tuned": {
+      "model": "SVM_tuned",
+      "accuracy": 0.8495508982035929,
+      "precision_macro": 0.6366692150957987,
+      "recall_macro": 0.6325659164807954,
+      "f1_macro": 0.6341192398696746,
+      "precision_weighted": 0.8477259206861645,
+      "recall_weighted": 0.8495508982035929,
+      "f1_weighted": 0.8485102891147818,
+      "precision_clean": 0.9244424214838416,
+      "recall_clean": 0.9273972602739726,
+      "f1_clean": 0.9259174834739001,
+      "precision_offensive": 0.4397905759162304,
+      "recall_offensive": 0.39622641509433965,
+      "f1_offensive": 0.41687344913151364,
+      "precision_hate": 0.545774647887324,
+      "recall_hate": 0.5740740740740741,
+      "f1_hate": 0.5595667870036101,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.92      0.93      0.93      2190\n   OFFENSIVE       0.44      0.40      0.42       212\n        HATE       0.55      0.57      0.56       270\n\n    accuracy                           0.85      2672\n   macro avg       0.64      0.63      0.63      2672\nweighted avg       0.85      0.85      0.85      2672\n",
+      "train_time": 2.5319696669999985,
+      "inference_time": 0.0
+    },
+    "NB_tuned": {
+      "model": "NB_tuned",
+      "accuracy": 0.6710329341317365,
+      "precision_macro": 0.4975297810146732,
+      "recall_macro": 0.6345002536783358,
+      "f1_macro": 0.5112646359906708,
+      "precision_weighted": 0.8379519009434838,
+      "recall_weighted": 0.6710329341317365,
+      "f1_weighted": 0.7213597515728792,
+      "precision_clean": 0.9638242894056848,
+      "recall_clean": 0.6812785388127854,
+      "f1_clean": 0.7982878544676297,
+      "precision_offensive": 0.25059101654846333,
+      "recall_offensive": 0.5,
+      "f1_offensive": 0.33385826771653543,
+      "precision_hate": 0.2781740370898716,
+      "recall_hate": 0.7222222222222222,
+      "f1_hate": 0.4016477857878476,
+      "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.96      0.68      0.80      2190\n   OFFENSIVE       0.25      0.50      0.33       212\n        HATE       0.28      0.72      0.40       270\n\n    accuracy                           0.67      2672\n   macro avg       0.50      0.63      0.51      2672\nweighted avg       0.84      0.67      0.72      2672\n",
+      "train_time": 0.4170833189999712,
+      "inference_time": 0.0
+    }
+  },
+  "best_thresholds": {
+    "best_for_f1_macro": {
+      "off_bias": 1.0,
+      "hate_bias": 1.0,
+      "f1_macro": 0.6232748697443354,
+      "f1_offensive": 0.4083333333333333
+    },
+    "best_for_f1_offensive": {
+      "off_bias": 1.5,
+      "hate_bias": 1.0,
+      "f1_macro": 0.6215704599350792,
+      "f1_offensive": 0.41721854304635764
+    }
+  }
+}

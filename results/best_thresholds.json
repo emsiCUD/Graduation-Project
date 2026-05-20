@@ -1,0 +1,14 @@
+{
+  "best_for_f1_macro": {
+    "off_bias": 1.0,
+    "hate_bias": 1.0,
+    "f1_macro": 0.6232748697443354,
+    "f1_offensive": 0.4083333333333333
+  },
+  "best_for_f1_offensive": {
+    "off_bias": 1.5,
+    "hate_bias": 1.0,
+    "f1_macro": 0.6215704599350792,
+    "f1_offensive": 0.41721854304635764
+  }
+}
