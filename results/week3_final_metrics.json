@@ -1,0 +1,155 @@
+{
+  "champion": {
+    "algorithm": "LogisticRegression",
+    "features": "TF-IDF word (1,2) ⊕ TF-IDF char (3,5), hstack",
+    "best_params": {
+      "C": 5,
+      "class_weight": "balanced",
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "max_iter": 2000,
+      "random_state": 42
+    },
+    "n_features_total": 25000
+  },
+  "dev_metrics": {
+    "model": "LR_champion — Dev",
+    "accuracy": 0.8379491017964071,
+    "precision_macro": 0.6160327453629925,
+    "recall_macro": 0.6643714361384733,
+    "f1_macro": 0.6366937068023745,
+    "precision_weighted": 0.8555838125604202,
+    "recall_weighted": 0.8379491017964071,
+    "f1_weighted": 0.8453629545757612,
+    "precision_clean": 0.9430349449497367,
+    "recall_clean": 0.8995433789954338,
+    "f1_clean": 0.9207758822154709,
+    "precision_offensive": 0.4050632911392405,
+    "recall_offensive": 0.4528301886792453,
+    "f1_offensive": 0.42761692650334077,
+    "precision_hate": 0.5,
+    "recall_hate": 0.6407407407407407,
+    "f1_hate": 0.5616883116883117,
+    "confusion_matrix": [
+      [
+        1970,
+        105,
+        115
+      ],
+      [
+        58,
+        96,
+        58
+      ],
+      [
+        61,
+        36,
+        173
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.94      0.90      0.92      2190\n   OFFENSIVE       0.41      0.45      0.43       212\n        HATE       0.50      0.64      0.56       270\n\n    accuracy                           0.84      2672\n   macro avg       0.62      0.66      0.64      2672\nweighted avg       0.86      0.84      0.85      2672\n",
+    "train_time": 0.0,
+    "inference_time": 0.0
+  },
+  "test_metrics": {
+    "model": "LR_champion (word+char, C=5, balanced)",
+    "accuracy": 0.8353293413173652,
+    "precision_macro": 0.5973944988330747,
+    "recall_macro": 0.648722973489074,
+    "f1_macro": 0.6194247509242414,
+    "precision_weighted": 0.8550412788378291,
+    "recall_weighted": 0.8353293413173652,
+    "f1_weighted": 0.8438410838708194,
+    "precision_clean": 0.9394512771996215,
+    "recall_clean": 0.8949170872386446,
+    "f1_clean": 0.9166435890335087,
+    "precision_offensive": 0.35688405797101447,
+    "recall_offensive": 0.4436936936936937,
+    "f1_offensive": 0.39558232931726905,
+    "precision_hate": 0.4958481613285884,
+    "recall_hate": 0.6075581395348837,
+    "f1_hate": 0.5460483344219464,
+    "confusion_matrix": [
+      [
+        4965,
+        260,
+        323
+      ],
+      [
+        145,
+        197,
+        102
+      ],
+      [
+        175,
+        95,
+        418
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n       CLEAN       0.94      0.89      0.92      5548\n   OFFENSIVE       0.36      0.44      0.40       444\n        HATE       0.50      0.61      0.55       688\n\n    accuracy                           0.84      6680\n   macro avg       0.60      0.65      0.62      6680\nweighted avg       0.86      0.84      0.84      6680\n",
+    "train_time": 9.215811899000016,
+    "inference_time": 0.010731840999994802
+  },
+  "dev_vs_test": [
+    {
+      "Metric": "f1_macro",
+      "Dev": 0.6367,
+      "Test": 0.6194,
+      "Δ (Test-Dev)": -0.0173,
+      "Δ %": "-2.71%"
+    },
+    {
+      "Metric": "f1_clean",
+      "Dev": 0.9208,
+      "Test": 0.9166,
+      "Δ (Test-Dev)": -0.0041,
+      "Δ %": "-0.45%"
+    },
+    {
+      "Metric": "f1_offensive",
+      "Dev": 0.4276,
+      "Test": 0.3956,
+      "Δ (Test-Dev)": -0.032,
+      "Δ %": "-7.49%"
+    },
+    {
+      "Metric": "f1_hate",
+      "Dev": 0.5617,
+      "Test": 0.546,
+      "Δ (Test-Dev)": -0.0156,
+      "Δ %": "-2.78%"
+    },
+    {
+      "Metric": "accuracy",
+      "Dev": 0.8379,
+      "Test": 0.8353,
+      "Δ (Test-Dev)": -0.0026,
+      "Δ %": "-0.31%"
+    },
+    {
+      "Metric": "precision_macro",
+      "Dev": 0.616,
+      "Test": 0.5974,
+      "Δ (Test-Dev)": -0.0186,
+      "Δ %": "-3.03%"
+    },
+    {
+      "Metric": "recall_macro",
+      "Dev": 0.6644,
+      "Test": 0.6487,
+      "Δ (Test-Dev)": -0.0156,
+      "Δ %": "-2.36%"
+    },
+    {
+      "Metric": "f1_weighted",
+      "Dev": 0.8454,
+      "Test": 0.8438,
+      "Δ (Test-Dev)": -0.0015,
+      "Δ %": "-0.18%"
+    }
+  ],
+  "generalisation_gap": {
+    "f1_macro_drop_pct": 2.7122862521858115,
+    "verdict": "mild gap"
+  }
+}
