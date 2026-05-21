@@ -1,0 +1,6 @@
+Stage,Split,F1_macro,F1_CLEAN,F1_OFFENSIVE,F1_HATE,Accuracy
+1. Baseline (LR_TFIDF_Balanced),dev,0.6015,0.8894,0.3985,0.5166,0.7927
+"2. Tuned (LR word, C=5 balanced)",dev,0.6024,0.895,0.4,0.5121,0.8009
+3. +Char n-grams (word ⊕ char),dev,0.6392,0.9208,0.4365,0.5603,0.8387
+"4. +Threshold (off=1.0, hate=1.0)",dev,0.6392,0.9208,0.4365,0.5603,0.8387
+5. Champion (refit) — TEST,test,0.6183,0.9144,0.3976,0.5428,0.8334
