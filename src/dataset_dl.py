@@ -270,6 +270,7 @@ def build_embedding_matrix(
     unk_init_range: float = 0.25,
     seed: int = 42,
     verbose: bool = True,
+    compound_fallback: bool = True,
 ) -> Tuple[torch.Tensor, Dict[str, float]]:
     """Align a pretrained embedding file with the project ``Vocab``.
 
@@ -284,6 +285,19 @@ def build_embedding_matrix(
     against the file; on mismatch the file's dim wins and a warning is
     printed.
 
+    Compound fallback
+    -----------------
+    The cleaned text from :mod:`src.preprocess` joins multi-syllable words
+    with ``_`` (underthesea ``format='text'`` convention), e.g. ``hôm_nay``.
+    Pre-trained embeddings trained on **raw** Vietnamese text (fastText
+    cc.vi, anything off Common Crawl) won't have such tokens — coverage
+    would collapse from ~70% (PhoW2V, same tokenisation) to ~30%.
+
+    When ``compound_fallback=True`` we make a single extra pass: for any
+    compound vocab token not found directly, we average the embeddings of
+    its underscore-separated parts. This typically recovers another
+    25-40% of coverage on fastText.
+
     Returns
     -------
     embeddings
@@ -291,7 +305,8 @@ def build_embedding_matrix(
         ``<pad>`` row is forced to zero. Other rows missing from the file
         are initialised uniformly in ``[-unk_init_range, +unk_init_range]``.
     stats
-        ``{"vocab_size": int, "found": int, "missing": int, "coverage": float, "dim": int}``.
+        ``{"vocab_size", "found_direct", "found_compound", "found",
+        "missing", "coverage", "dim"}``.
     """
     embedding_path = Path(embedding_path)
     if not embedding_path.exists():
@@ -301,6 +316,20 @@ def build_embedding_matrix(
     # Provisional matrix — we may resize once we know the file dim.
     matrix = rng.uniform(-unk_init_range, unk_init_range, size=(len(vocab), dim)).astype(np.float32)
     found_mask = np.zeros(len(vocab), dtype=bool)
+
+    # Pre-compute compound-word parts we'll want to capture during the scan.
+    compound_parts: Dict[str, List[str]] = {}
+    parts_needed: set = set()
+    if compound_fallback:
+        for tok, idx in vocab.stoi.items():
+            if idx < len(Vocab.SPECIALS) or "_" not in tok:
+                continue
+            parts = tok.split("_")
+            if len(parts) >= 2 and all(parts):
+                compound_parts[tok] = parts
+                parts_needed.update(parts)
+
+    parts_vectors: Dict[str, np.ndarray] = {}
 
     t0 = time.perf_counter()
     file_dim: Optional[int] = None
@@ -334,14 +363,35 @@ def build_embedding_matrix(
             if sp == -1:
                 continue
             word = line[:sp]
-            idx = vocab.stoi.get(word)
-            if idx is None:
+            in_vocab = word in vocab.stoi
+            is_part = word in parts_needed
+            if not in_vocab and not is_part:
                 continue
             vec = np.fromstring(line[sp + 1:], sep=" ", dtype=np.float32)
             if vec.shape[0] != file_dim:
                 continue
-            matrix[idx] = vec
+            if in_vocab:
+                idx = vocab.stoi[word]
+                matrix[idx] = vec
+                found_mask[idx] = True
+            if is_part:
+                parts_vectors[word] = vec
+
+    found_direct = int(found_mask.sum())
+
+    # Compound fallback: average parts for any unfound compound token.
+    recovered = 0
+    if compound_fallback:
+        for tok, parts in compound_parts.items():
+            idx = vocab.stoi[tok]
+            if found_mask[idx]:
+                continue
+            available = [parts_vectors[p] for p in parts if p in parts_vectors]
+            if not available:
+                continue
+            matrix[idx] = np.mean(available, axis=0)
             found_mask[idx] = True
+            recovered += 1
 
     # <pad> stays zero so it can never contribute to the mean / sum pooling
     matrix[PAD_ID] = 0.0
@@ -350,17 +400,20 @@ def build_embedding_matrix(
     found = int(found_mask.sum())
     coverage = found / len(vocab)
     stats = {
-        "vocab_size": len(vocab),
-        "found":      found,
-        "missing":    len(vocab) - found,
-        "coverage":   coverage,
-        "dim":        file_dim,
+        "vocab_size":     len(vocab),
+        "found_direct":   found_direct,
+        "found_compound": recovered,
+        "found":          found,
+        "missing":        len(vocab) - found,
+        "coverage":       coverage,
+        "dim":            file_dim,
     }
     if verbose:
         dt = time.perf_counter() - t0
+        compound_msg = f" (+{recovered:,} via compound fallback)" if recovered else ""
         print(
             f"  loaded {embedding_path.name} in {dt:.1f}s  |  "
-            f"coverage {found:,}/{len(vocab):,} ({coverage:.1%})  |  dim={file_dim}"
+            f"coverage {found:,}/{len(vocab):,} ({coverage:.1%}){compound_msg}  |  dim={file_dim}"
         )
 
     return torch.from_numpy(matrix), stats
