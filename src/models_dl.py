@@ -71,6 +71,7 @@ class BiLSTMClassifier(nn.Module):
         pretrained_embeddings: Optional[torch.Tensor] = None,
         freeze_embeddings: bool = False,
         padding_idx: int = 0,
+        head_dropout: float = 0.5,
     ) -> None:
         super().__init__()
 
@@ -100,12 +101,16 @@ class BiLSTMClassifier(nn.Module):
             dropout=dropout if num_layers > 1 else 0.0,
         )
 
-        self.dropout = nn.Dropout(0.5)
+        self.dropout = nn.Dropout(head_dropout)
         self.fc = nn.Linear(hidden_dim * 2, num_classes)
 
         self.hidden_dim = hidden_dim
         self.num_layers = num_layers
         self.padding_idx = padding_idx
+
+    def set_embedding_frozen(self, frozen: bool) -> None:
+        """Toggle ``self.embedding.weight.requires_grad`` for warmup schedules."""
+        self.embedding.weight.requires_grad = not frozen
 
     def forward(self, input_ids: torch.Tensor, lengths: torch.Tensor) -> torch.Tensor:
         # pack_padded_sequence silently corrupts state on length=0; surface it
