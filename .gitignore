@@ -20,3 +20,4 @@ models/dl/embedding_matrix_*.pt
 models/dl/*.bin
 models/dl/*.safetensors
 models/dl/checkpoint_*.pt
+models/dl/*_best.pt
