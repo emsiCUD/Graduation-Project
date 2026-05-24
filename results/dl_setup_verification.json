@@ -1,0 +1,170 @@
+{
+  "length_stats": {
+    "min": 0,
+    "p5": 2,
+    "p25": 4,
+    "p50": 7,
+    "p75": 11,
+    "p95": 27,
+    "p99": 51,
+    "max": 1201,
+    "mean": 9.717689620758483,
+    "std": 15.457680507699587
+  },
+  "short_samples": {
+    "pct_len_eq_1": 2.81936127744511,
+    "pct_len_le_2": 11.019627411842981,
+    "pct_len_le_5": 39.31719893546241
+  },
+  "truncation": {
+    "current_max_len": 256,
+    "pct_truncated": 0.020791749833666,
+    "p95_recommended": 32,
+    "p99_recommended": 56
+  },
+  "memory_profile": [
+    {
+      "label": "current (no fp16)",
+      "batch_size": 16,
+      "max_len": 256,
+      "fp16": false,
+      "grad_accum": 1,
+      "eff_batch": 16,
+      "peak_gb": 3.079094272,
+      "vram_pct": 47.797723203385694,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.23166669998317957
+    },
+    {
+      "label": "current + fp16",
+      "batch_size": 16,
+      "max_len": 256,
+      "fp16": true,
+      "grad_accum": 1,
+      "eff_batch": 16,
+      "peak_gb": 3.467881472,
+      "vram_pct": 53.832985955684876,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.4229615000076592
+    },
+    {
+      "label": "bs=8 accum=2 (eff=16)",
+      "batch_size": 8,
+      "max_len": 256,
+      "fp16": true,
+      "grad_accum": 2,
+      "eff_batch": 16,
+      "peak_gb": 3.28126464,
+      "vram_pct": 50.93607573044682,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.34972659999039024
+    },
+    {
+      "label": "bs=8 accum=2 len=128",
+      "batch_size": 8,
+      "max_len": 128,
+      "fp16": true,
+      "grad_accum": 2,
+      "eff_batch": 16,
+      "peak_gb": 2.848961024,
+      "vram_pct": 44.2252943278465,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.23713530006352812
+    },
+    {
+      "label": "bs=16 len=128 fp16",
+      "batch_size": 16,
+      "max_len": 128,
+      "fp16": true,
+      "grad_accum": 1,
+      "eff_batch": 16,
+      "peak_gb": 2.809159168,
+      "vram_pct": 43.60743792982421,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.16830119991209358
+    },
+    {
+      "label": "bs=16 len=128 no fp16",
+      "batch_size": 16,
+      "max_len": 128,
+      "fp16": false,
+      "grad_accum": 1,
+      "eff_batch": 16,
+      "peak_gb": 2.955000832,
+      "vram_pct": 45.871382736835685,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.14610669994726777
+    },
+    {
+      "label": "bs=4 accum=4 (eff=16)",
+      "batch_size": 4,
+      "max_len": 256,
+      "fp16": true,
+      "grad_accum": 4,
+      "eff_batch": 16,
+      "peak_gb": 2.848961024,
+      "vram_pct": 44.2252943278465,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.5353816000279039
+    },
+    {
+      "label": "bs=32 len=128 aggressive",
+      "batch_size": 32,
+      "max_len": 128,
+      "fp16": true,
+      "grad_accum": 1,
+      "eff_batch": 32,
+      "peak_gb": 3.467881472,
+      "vram_pct": 53.832985955684876,
+      "ok": true,
+      "err": null,
+      "elapsed_s": 0.174805200076662
+    }
+  ],
+  "recommended_phobert": {
+    "label": "bs=16 len=128 fp16",
+    "batch_size": 16,
+    "max_len": 128,
+    "fp16": true,
+    "grad_accum": 1,
+    "eff_batch": 16,
+    "peak_gb": 2.809159168,
+    "vram_pct": 43.60743792982421,
+    "ok": true,
+    "err": null,
+    "elapsed_s": 0.16830119991209358
+  },
+  "sanity": {
+    "bilstm_no_nan": true,
+    "bilstm_decreasing": false,
+    "bilstm_grad_sane": true,
+    "bilstm_losses": [
+      1.1048897504806519,
+      1.0911370515823364,
+      1.0753165483474731,
+      1.1282833814620972,
+      1.0854947566986084,
+      1.0859214067459106,
+      1.1310492753982544,
+      1.074536681175232,
+      1.120612621307373,
+      1.1116421222686768
+    ],
+    "phobert_no_oom": true,
+    "phobert_no_nan": true,
+    "phobert_losses": [
+      1.1102904081344604,
+      1.0910035371780396,
+      1.1331956386566162,
+      1.1247400045394897,
+      1.1319801807403564
+    ]
+  }
+}
