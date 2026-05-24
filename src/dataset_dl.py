@@ -275,23 +275,38 @@ class FilteredViHSDDataset(Dataset):
         min_length: int = 3,
         verbose: bool = True,
         save_path: Optional[Union[str, Path]] = None,
+        length_tokenizer: Optional["Vocab"] = None,
     ) -> None:
-        if base.mode != "bilstm":
-            raise ValueError(
-                f"FilteredViHSDDataset only supports mode='bilstm' "
-                f"(got {base.mode!r}); PhoBERT pads to a fixed max_len."
-            )
-        if not isinstance(base.tokenizer, Vocab):
-            raise TypeError(
-                "FilteredViHSDDataset needs a Vocab tokenizer to compute lengths."
-            )
+        # Pick the tokenizer used to compute *length* for the filter. For
+        # ``mode='bilstm'`` we already have a Vocab on the base dataset; for
+        # ``mode='phobert'`` we need an explicit Vocab so the filter uses the
+        # same word-level length metric as the BiLSTM pipeline — keeping the
+        # train-set composition identical across the two models.
+        if base.mode == "bilstm":
+            if not isinstance(base.tokenizer, Vocab):
+                raise TypeError(
+                    "BiLSTM mode requires a Vocab tokenizer on the base dataset."
+                )
+            length_tok = base.tokenizer
+        elif base.mode == "phobert":
+            if length_tokenizer is None:
+                raise ValueError(
+                    "FilteredViHSDDataset on mode='phobert' needs an explicit "
+                    "`length_tokenizer=vocab` so the length metric matches the "
+                    "BiLSTM filter (keeps train composition identical)."
+                )
+            if not isinstance(length_tokenizer, Vocab):
+                raise TypeError("length_tokenizer must be a Vocab instance.")
+            length_tok = length_tokenizer
+        else:
+            raise ValueError(f"Unsupported base.mode: {base.mode!r}")
 
         self.base = base
         self.min_length = int(min_length)
 
         kept: List[int] = []
         for i in range(len(base)):
-            ids = base.tokenizer.text_to_ids(base.texts[i], max_len=base.max_len)
+            ids = length_tok.text_to_ids(base.texts[i], max_len=base.max_len)
             if not ids:
                 ids = [UNK_ID]                                  # mirrors _item_bilstm
             if len(ids) >= self.min_length:
@@ -306,10 +321,11 @@ class FilteredViHSDDataset(Dataset):
             "removed":       original - kept_n,
             "pct_removed":   100.0 * (original - kept_n) / max(original, 1),
             "min_length":    self.min_length,
+            "base_mode":     base.mode,
         }
 
         if verbose:
-            print(f"FilteredViHSDDataset(min_length={self.min_length}):")
+            print(f"FilteredViHSDDataset(min_length={self.min_length}, mode={base.mode}):")
             print(f"  original size: {original:,}")
             print(f"  filtered size: {kept_n:,}")
             print(f"  removed      : {original - kept_n:,}  ({self.stats['pct_removed']:.2f}%)")
