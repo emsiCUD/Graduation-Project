@@ -6,6 +6,8 @@ Provides everything the BiLSTM and PhoBERT training scripts will need:
 * :class:`Vocab`             – word-level vocabulary built from training texts.
 * :class:`ViHSDDataset`      – ``torch.utils.data.Dataset`` with two modes
   (``'bilstm'`` or ``'phobert'``).
+* :class:`FilteredViHSDDataset` – training-only wrapper that drops samples
+  shorter than ``min_length`` (avoids NaN-gradient corner cases).
 * :func:`collate_fn_bilstm`  – pads variable-length token-id sequences.
 * :func:`collate_fn_phobert` – stacks pre-padded HF tokenizer output.
 * :func:`build_embedding_matrix` – read a PhoW2V / fastText ``.vec`` file
@@ -227,11 +229,123 @@ class ViHSDDataset(Dataset):
 
 
 # ──────────────────────────────────────────────────────────────
+# Length-based filtering wrapper (training only)
+# ──────────────────────────────────────────────────────────────
+
+class FilteredViHSDDataset(Dataset):
+    """Drop training samples whose tokenised length is below ``min_length``.
+
+    Why this exists: Week-4 E1 analysis showed ~11% of training samples
+    have length≤2 after underthesea word-segmentation. A 1-token sample
+    through a 2-layer BiLSTM produces a near-degenerate hidden state and
+    can drive ``CrossEntropyLoss`` to NaN under fp16 / aggressive lr.
+
+    **Use on training only.** Dev and test must stay at the full
+    distribution, otherwise reported metrics overstate generalisation.
+
+    Parameters
+    ----------
+    base
+        A ``ViHSDDataset`` instance in ``mode='bilstm'``. The PhoBERT
+        mode produces fixed-max_len padded tensors, so length filtering
+        is meaningless there.
+    min_length
+        Minimum token count (post-truncation, includes ``<bos>``/``<eos>``)
+        required to keep a sample. Default 3, matching the E1 verdict.
+    verbose
+        Print the filter summary when True.
+    save_path
+        Optional path for a small JSON dump of the filter stats. Useful
+        for the Week-4 decision log.
+
+    Attributes
+    ----------
+    base
+        The wrapped ``ViHSDDataset``.
+    indices
+        Sorted list of base-dataset indices that survived the filter.
+    stats
+        Dict with keys ``original_size``, ``filtered_size``, ``removed``,
+        ``pct_removed``, ``min_length``.
+    """
+
+    def __init__(
+        self,
+        base: "ViHSDDataset",
+        min_length: int = 3,
+        verbose: bool = True,
+        save_path: Optional[Union[str, Path]] = None,
+    ) -> None:
+        if base.mode != "bilstm":
+            raise ValueError(
+                f"FilteredViHSDDataset only supports mode='bilstm' "
+                f"(got {base.mode!r}); PhoBERT pads to a fixed max_len."
+            )
+        if not isinstance(base.tokenizer, Vocab):
+            raise TypeError(
+                "FilteredViHSDDataset needs a Vocab tokenizer to compute lengths."
+            )
+
+        self.base = base
+        self.min_length = int(min_length)
+
+        kept: List[int] = []
+        for i in range(len(base)):
+            ids = base.tokenizer.text_to_ids(base.texts[i], max_len=base.max_len)
+            if not ids:
+                ids = [UNK_ID]                                  # mirrors _item_bilstm
+            if len(ids) >= self.min_length:
+                kept.append(i)
+        self.indices = kept
+
+        original = len(base)
+        kept_n = len(kept)
+        self.stats: Dict[str, float] = {
+            "original_size": original,
+            "filtered_size": kept_n,
+            "removed":       original - kept_n,
+            "pct_removed":   100.0 * (original - kept_n) / max(original, 1),
+            "min_length":    self.min_length,
+        }
+
+        if verbose:
+            print(f"FilteredViHSDDataset(min_length={self.min_length}):")
+            print(f"  original size: {original:,}")
+            print(f"  filtered size: {kept_n:,}")
+            print(f"  removed      : {original - kept_n:,}  ({self.stats['pct_removed']:.2f}%)")
+
+        if save_path is not None:
+            save_path = Path(save_path)
+            save_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(save_path, "w", encoding="utf-8") as f:
+                json.dump(self.stats, f, indent=2)
+            if verbose:
+                print(f"  stats saved  : {save_path}")
+
+    def __len__(self) -> int:
+        return len(self.indices)
+
+    def __getitem__(self, idx: int) -> Dict[str, torch.Tensor]:
+        return self.base[self.indices[idx]]
+
+
+# ──────────────────────────────────────────────────────────────
 # Collate functions
 # ──────────────────────────────────────────────────────────────
 
 def collate_fn_bilstm(batch: List[Dict[str, torch.Tensor]]) -> Dict[str, torch.Tensor]:
-    """Right-pad ``input_ids`` to the longest sequence in the batch."""
+    """Right-pad ``input_ids`` to the longest sequence in the batch.
+
+    Drops length-0 samples silently to defend against an upstream bug —
+    ``pack_padded_sequence`` corrupts state on a 0-length input, and the
+    downstream error is unrecognisable. A real Dataset should never yield
+    length=0 (``_item_bilstm`` substitutes ``[UNK]``), but the guard is
+    cheap and the failure mode would be too painful otherwise.
+    """
+    batch = [b for b in batch if int(b["length"].item()) >= 1]
+    if not batch:
+        raise RuntimeError("collate_fn_bilstm: every sample in the batch had length<1")
+
     lengths = torch.stack([b["length"] for b in batch])
     max_len = int(lengths.max().item())
     input_ids = torch.full((len(batch), max_len), PAD_ID, dtype=torch.long)
