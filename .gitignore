@@ -21,3 +21,6 @@ models/dl/*.bin
 models/dl/*.safetensors
 models/dl/checkpoint_*.pt
 models/dl/*_best.pt
+models/dl/phobert_best/
+models/dl/phobert_checkpoints/
+logs/
