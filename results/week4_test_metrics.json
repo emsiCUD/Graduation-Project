@@ -1,0 +1,151 @@
+{
+  "test_set_size": 6680,
+  "class_distribution": {
+    "CLEAN": 5548,
+    "OFFENSIVE": 444,
+    "HATE": 688
+  },
+  "models": {
+    "lr_champion": {
+      "name": "LR + char champion (Wk 3)",
+      "test": {
+        "accuracy": 0.8333832335329341,
+        "precision_macro": 0.5963903797466984,
+        "recall_macro": 0.6473593370453332,
+        "f1_macro": 0.6182909165520397,
+        "precision_weighted": 0.8528925842472358,
+        "recall_weighted": 0.8333832335329341,
+        "f1_weighted": 0.8418170526416646,
+        "precision_clean": 0.9370153205976924,
+        "recall_clean": 0.8929343907714492,
+        "f1_clean": 0.9144439317028149,
+        "precision_offensive": 0.358695652173913,
+        "recall_offensive": 0.44594594594594594,
+        "f1_offensive": 0.39759036144578314,
+        "precision_hate": 0.4934601664684899,
+        "recall_hate": 0.6031976744186046,
+        "f1_hate": 0.5428384565075213,
+        "train_time": 2.2141107000643387,
+        "inference_time": 0.006320300046354532
+      },
+      "params": 25000,
+      "predictions_csv": "results\\test_predictions.csv"
+    },
+    "bilstm_v2": {
+      "name": "BiLSTM v2 (Exp3)",
+      "test": {
+        "accuracy": 0.8047904191616766,
+        "f1_macro": 0.5901669807142905,
+        "f1_clean": 0.8981167608286252,
+        "f1_offensive": 0.3694060211554109,
+        "f1_hate": 0.5029781601588352,
+        "precision_macro": 0.5637192072616476,
+        "recall_macro": 0.6410586279175002
+      },
+      "params": 3533355,
+      "test_inference_s": 0.9084576999302953,
+      "train_s": 57.90213160007261,
+      "predictions_csv": "results\\bilstm_v2_test_predictions.csv",
+      "checkpoint": "models\\dl\\bilstm_v2_best.pt"
+    },
+    "phobert": {
+      "name": "PhoBERT-base-v2",
+      "test": {
+        "accuracy": 0.8624251497005988,
+        "f1_macro": 0.6617605941841284,
+        "f1_clean": 0.9312169312169312,
+        "f1_offensive": 0.43743199129488575,
+        "f1_hate": 0.6166328600405679,
+        "precision_macro": 0.6474614659738944,
+        "recall_macro": 0.6784881870519267
+      },
+      "dev": {
+        "accuracy": 0.8645209580838323,
+        "f1_macro": 0.686375552810213,
+        "f1_clean": 0.9341345042754795,
+        "f1_offensive": 0.5133928571428571,
+        "f1_hate": 0.6115992970123023
+      },
+      "dev_vs_test": [
+        {
+          "Metric": "F1_macro",
+          "Dev": 0.686375552810213,
+          "Test": 0.6617605941841284,
+          "Δ_abs": -0.02461495862608465,
+          "Δ_rel_pct": -3.5862230997744806
+        },
+        {
+          "Metric": "F1_CLEAN",
+          "Dev": 0.9341345042754795,
+          "Test": 0.9312169312169312,
+          "Δ_abs": -0.0029175730585483395,
+          "Δ_rel_pct": -0.3123290109930397
+        },
+        {
+          "Metric": "F1_OFFENSIVE",
+          "Dev": 0.5133928571428571,
+          "Test": 0.43743199129488575,
+          "Δ_abs": -0.07596086584797135,
+          "Δ_rel_pct": -14.795855608648335
+        },
+        {
+          "Metric": "F1_HATE",
+          "Dev": 0.6115992970123023,
+          "Test": 0.6166328600405679,
+          "Δ_abs": 0.005033563028265631,
+          "Δ_rel_pct": 0.8230164836445816
+        },
+        {
+          "Metric": "Accuracy",
+          "Dev": 0.8645209580838323,
+          "Test": 0.8624251497005988,
+          "Δ_abs": -0.002095808383233533,
+          "Δ_rel_pct": -0.24242424242424243
+        },
+        {
+          "Metric": "Precision_macro",
+          "Dev": 0.6716487438673031,
+          "Test": 0.6474614659738944,
+          "Δ_abs": -0.024187277893408687,
+          "Δ_rel_pct": -3.601179651455931
+        },
+        {
+          "Metric": "Recall_macro",
+          "Dev": 0.7032427749538114,
+          "Test": 0.6784881870519267,
+          "Δ_abs": -0.024754587901884673,
+          "Δ_rel_pct": -3.520062883477266
+        }
+      ],
+      "generalization_verdict": "Good generalization, mild gap",
+      "params": 135000579,
+      "test_inference_s": 22.0469613999594,
+      "train_s": 1732.3594425999327,
+      "predictions_csv": "results\\phobert_test_predictions.csv",
+      "model_dir": "models\\dl\\phobert_best"
+    }
+  },
+  "champion": {
+    "model": "PhoBERT-base-v2",
+    "f1_macro": 0.6617605941841284
+  },
+  "disagreement_set_sizes": {
+    "lr_right_phobert_wrong": 303,
+    "phobert_right_lr_wrong": 497,
+    "all_three_wrong": 517
+  },
+  "offensive_to_clean_fn": {
+    "lr": {
+      "count": 149,
+      "total": 444
+    },
+    "bilstm_v2": {
+      "count": 134,
+      "total": 444
+    },
+    "phobert": {
+      "count": 148,
+      "total": 444
+    }
+  }
+}
