@@ -1,0 +1,304 @@
+text,text_cleaned,length,true_label,true_name,lr_pred,bilstm_pred,phobert_pred,phobert_conf,prob_clean,prob_off,prob_hate
+Haizz. Nthe này thì dân khổ quá,haizz nthe này thì dân khổ quá,7,1,OFFENSIVE,1,0,0,0.8971,0.8971,0.0939,0.009
+(Y) page này ad nó kiến thức uyên sâu lắm từ xây dựng tài chính y tế cái j n cũng am hiểu =)))) ngu dốt + nhiệt tình = phá hoại k sai bh,y_page này admin nó kiến_thức uyên_sâu lắm từ xây_dựng tài_chính y_tế cái gì n cũng am_hiểu ngu dốt nhiệt_tình phá_hoại không sai bh,23,2,HATE,2,2,0,0.9462,0.9462,0.0098,0.044
+"K nói thì tự kiêu,nói thì lại tự ái chứ í thức thế ai mà chịu nổi😡",không nói thì tự kiêu nói thì lại tự_ái chứ í_thức thế ai mà chịu nổi,16,1,OFFENSIVE,1,2,0,0.9385,0.9385,0.0568,0.0048
+Chán thực sự =))),chán thực_sự,2,0,CLEAN,0,0,1,0.9736,0.0225,0.9736,0.004
+Mấy ông sống nhanh thế =))),mấy ông sống nhanh thế,5,0,CLEAN,0,0,2,0.9268,0.066,0.0071,0.9268
+Theo trung cộng đi rồi đến lúc ko còn lợi dụng đc bà sẽ thấy cảnh. Hãy nhớ câu đừng nghe những gì cs nói mà..😂😂😂,theo trung_cộng đi rồi đến lúc không còn lợi_dụng được bà sẽ thấy cảnh hãy nhớ câu đừng nghe những gì có nói mà,24,2,HATE,2,0,0,0.8117,0.8117,0.0161,0.1722
+Công an mà muốn xử lý thì 2 ông luật sư này sẽ biến mất ngay lập tức. Chứ chả phải bị đánh giữa đường rồi chụp ảnh máu me post lên mạng rầm rầm đâu,công_an mà muốn xử_lý thì 2 ông luật_sư này sẽ biến mất ngay_lập_tức chứ chả phải bị đánh giữa đường rồi chụp ảnh máu_me post lên mạng rầm_rầm đâu,29,0,CLEAN,0,2,2,0.6576,0.3197,0.0227,0.6576
+Mông lung như 1 trò đùa,mông lung_như 1 trò đùa,5,0,CLEAN,0,0,1,0.9913,0.0047,0.9913,0.004
+Hải Yến bố cái con thái lọ,hải_yến bố cái con_thái lọ,5,2,HATE,2,1,0,0.9773,0.9773,0.01,0.0127
+khi bạn muốn tích đức cho đời nhưng nghiệp quá nặng tại chúng rủa quá nên nghiệp:v,khi bạn muốn tích_đức cho đời nhưng nghiệp quá nặng tại chúng_rủa quá nên_nghiệp vậy,15,0,CLEAN,0,2,2,0.8356,0.1248,0.0396,0.8356
+Nữ sinh chạm tay vào má c.a thì đi tù. Rất VN...,nữ_sinh chạm tay vào má c anh thì đi tù rất vn,12,0,CLEAN,0,1,1,0.9281,0.0314,0.9281,0.0406
+Trời má khúc này lúc xem phim t khóc quá trời mà thấy ảnh này cái hết muốn xem cmnl,trời má khúc này lúc xem phim tao khóc quá_trời mà thấy ảnh này cái hết muốn xem cmnl,19,0,CLEAN,0,0,1,0.5138,0.4813,0.5138,0.005
+"Dân không có giàu nhé, chỉ nó nước mạnh thôi.",dân không có giàu nhé chỉ nó nước mạnh thôi,10,2,HATE,2,2,0,0.8152,0.8152,0.0568,0.128
+CÓ THẰNG THÔNG THẠO 29 THỨ TIẾNG LÀM CHỦ TỊCH PẮC PÓ,co thă ng thông tha_o 29 thư_tiê ng_la mày chu_ti ch pă c po,14,2,HATE,2,2,0,0.9385,0.9385,0.0166,0.0448
+hiếp tao,hiếp tao,2,1,OFFENSIVE,1,0,0,0.9935,0.9935,0.0048,0.0018
+Cay vl nhỉ kk,cay vãi nhỉ kk,4,1,OFFENSIVE,1,1,0,0.8381,0.8381,0.1581,0.0038
+Con di do noi doc giong con 3 vang ma !,con di_do noi doc giong con 3 vang ma,9,2,HATE,2,0,0,0.3995,0.3995,0.374,0.2265
+Diệp Bích ái Nguyễn Ái Băng coi Diệp nó láo cá nè Băng🤣🤣🤣,diệp bích_ái nguyễn_ái_băng coi diệp nó láo cá nè băng,10,0,CLEAN,0,0,2,0.9872,0.0093,0.0035,0.9872
+Tiếu lâm thời đại 4.0,tiếu lâm_thời_đại 4 0,4,0,CLEAN,0,0,2,0.781,0.2049,0.0141,0.781
+Tao thấy nhiễm covid này toàn bọn nhiều tiền và thích đi du lịch đấy..,tao thấy nhiễm covid này toàn bọn nhiều tiền và thích đi du_lịch đấy,14,2,HATE,2,1,0,0.9923,0.9923,0.0034,0.0043
+"CS miệng và đít chúng là một chỗ. Một chế độ thổ tả không còn sửa sai được nữa, mà phải thay đổi với một chế độ khác. Sống với CS mà không biết gì về thủ đoạn của bọn chúng là không có cái đầu.",có miê ng va đi tao chu_ng la_mô tao chô mô tao chê_đô thô ta không co n_sư anh sai đươ c nư anh ma pha i thay đô i_vơ i mô tao chê_đô kha_c sô ng_vơ i có ma không biê tao gi vê thu đoa n cu anh bo_n chu_ng la không co_ca i đâ_u,57,2,HATE,2,2,0,0.7231,0.7231,0.0814,0.1955
+"Mọi người quá lịch sự với tên khốn này rồi , cha đứa bé bị đánh nên ra tay cho nó thành tật đi đừng hi vọng nhiều ở luật pháp.",mọi người qua lịch_sư với tên khốn_này rồi cha đứa be bị đánh nên ra_tay cho nó thành tâ tao đi đừng hi_vọng nhiều ở luật pha p,28,2,HATE,2,2,0,0.893,0.893,0.0085,0.0985
+"anh Trung đập thẻ , anh Trung phá sản :)))",anh trung_đập thẻ anh trung_phá sản,6,0,CLEAN,0,0,2,0.9595,0.0358,0.0047,0.9595
+Thiên đường xhcn là cái gì mà sao từ trước đến h mình chưa đọc ở trang sách nào nhỉ,thiên_đường xhcn là cái gì mà sao từ trước đến giờ mình chưa đọc ở trang sách nào nhỉ,19,0,CLEAN,0,0,2,0.762,0.2112,0.0268,0.762
+Tủnn Tủnn đú vcl =)),tủnn tủnn đú vãi,4,1,OFFENSIVE,1,1,2,0.989,0.0051,0.0059,0.989
+Dem me minh ra lam tro cuoi   noi tuc tieu khg hay dau,dem me_minh ra lam tro cuoi noi tuc tieu không hay dau,12,0,CLEAN,0,1,1,0.567,0.4185,0.567,0.0146
+Ma mày đau ma mày đau bóp cu ba may sung con cười muốn chết luôn co kim oi,ma mày đau ma mày đau bóp cu ba may_sung con cười muốn chết luôn co_kim oi,17,2,HATE,2,2,0,0.9711,0.9711,0.0112,0.0176
+Anh tôi như khỉ đột vậy :)),anh tôi như khỉ đột_vậy,5,0,CLEAN,0,0,2,0.9374,0.0551,0.0075,0.9374
+Gai tre,gai tre,2,0,CLEAN,0,0,1,0.9619,0.0311,0.9619,0.007
+May bede ma rau thay on,may bede ma rau thay on,6,0,CLEAN,0,0,2,0.9858,0.0095,0.0047,0.9858
+Đẳng cấp đấy nhưng ý thức hơi kém,đẳng_cấp đấy nhưng ý_thức hơi kém,6,1,OFFENSIVE,1,1,0,0.8763,0.8763,0.1146,0.0091
+Đeo hiểu hai ngừoi phế nhất team thì sống 😀???,đeo hiểu hai ngừoi phế nhất team thì sống,9,0,CLEAN,0,0,2,0.6069,0.3612,0.0319,0.6069
+Trên bờ: tao chửi đấy mày làm đéo gì được tao :v,trên bờ tao chửi đấy mày làm đéo gì được tao vậy,12,1,OFFENSIVE,1,1,0,0.5986,0.5986,0.2954,0.106
+@Chiến trần Tao lao.,chiến_trần tao lao,3,1,OFFENSIVE,1,1,0,0.9956,0.9956,0.0019,0.0025
+toàn các cô gái ngồi xổm trym quệt đất ạ..,toàn các cô gái ngồi_xổm trym quệt đất ạ,9,1,OFFENSIVE,1,0,0,0.996,0.996,0.0016,0.0024
+Mới vào nghe bã chửi banh nhà lồng chợ luôn vãi thật,mới vào nghe bã chửi banh nhà_lồng chợ luôn vãi thật,11,0,CLEAN,0,1,1,0.8734,0.1174,0.8734,0.0092
+Gian hồ đài loan đầu sao mà kg lên tiến,gian hồ đài_loan đầu sao mà không lên tiến,9,0,CLEAN,0,0,2,0.9888,0.0078,0.0034,0.9888
+"anh Trung đập thẻ , anh Trung phá sản :)))",anh trung_đập thẻ anh trung_phá sản,6,0,CLEAN,0,0,2,0.9595,0.0358,0.0047,0.9595
+9. Xác. Thứi từ trinh xương gồi,9 xác thứi từ trinh_xương gồi,6,0,CLEAN,0,0,2,0.8836,0.0639,0.0524,0.8836
+giàu mà ko biết chia chác cho tụi nó thì bầu Kiên đã là một ví dụ.,giàu mà không biết chia_chác cho tụi nó thì bầu_kiên đã là một ví_dụ,14,2,HATE,2,2,1,0.6035,0.2516,0.6035,0.1449
+"Tao phải qua phản đối bọn ba que indo nha, bác tao nhìn đẹp chai đoản hậu, lộn phúc hậu thế kia mà nó quất cặp môi như hai miếng thịt trâu là làm thao",tao phải qua phản_đối bọn ba que indo_nha bác tao nhìn đẹp chai đoản hậu_lộn phúc_hậu thế kia mà nó quất cặp môi như hai miếng thịt trâu là làm thao,31,2,HATE,2,2,0,0.9828,0.9828,0.0035,0.0137
+Quốc sư phải khỏe để lãnh đạo 3/ chứ ko thì 3/ biết đi đâu về đâu 😭😭,quốc_sư phải khỏe để lãnh_đạo 3 chứ không thì 3 biết đi đâu về đâu,15,0,CLEAN,0,2,2,0.8481,0.1449,0.007,0.8481
+Nếu giết người chắc là tuyển vào quân đội làm sát thủ à,nếu giết người chắc là tuyển vào quân_đội làm sát_thủ à,11,0,CLEAN,0,0,1,0.8302,0.1375,0.8302,0.0323
+Tức phọt sữa,tức phọt sữa,3,0,CLEAN,0,0,1,0.9738,0.023,0.9738,0.0032
+mong cho nó trút moẹ tro vào quần !,mong cho nó trút moẹ tro vào quần,8,1,OFFENSIVE,1,1,2,0.5329,0.2035,0.2637,0.5329
+Trung lô đề :))),trung_lô đề,2,0,CLEAN,0,1,2,0.5555,0.3195,0.125,0.5555
+Doi song nay chet mai.can that voi loi noi se tot hon.ji hay ngheo tu minh bt khoe lay ji c d c oi,doi song nay chet mai_can that voi loi noi se tot_hon gì hay ngheo tu_minh bình_thường khoe_lay gì c d c oi,22,0,CLEAN,0,0,1,0.8542,0.1323,0.8542,0.0135
+? :D ?,d,1,0,CLEAN,0,0,1,0.8385,0.1514,0.8385,0.01
+"đục not ""đụt"" :3",đục not đụt 3,4,0,CLEAN,0,0,1,0.9915,0.0031,0.9915,0.0055
+Tập Cận Bình qua Mĩ cũng bị dân TQ bên đó treo băng rôn biểu tình chửi như chó =)),tâ p câ n bi_nh qua mi cu ng bi_dân tq bên đo treo băng rôn biê u_ti nh chư i như cho,23,2,HATE,2,1,0,0.8807,0.8807,0.0565,0.0627
+Phan VĂN Chương Hôi lông có cái hình đi đâu cũng đăng,phan_văn_chương hôi_lông có cái hình đi đâu cũng đăng,9,0,CLEAN,0,0,2,0.9789,0.0148,0.0063,0.9789
+Gan trời =)))),gan trời,2,0,CLEAN,0,1,1,0.8506,0.1396,0.8506,0.0097
+:DD,dd,1,0,CLEAN,0,0,1,0.9915,0.004,0.9915,0.0044
+"thì đã nói rồi. thế giới người ta có mỏ bạc, mỏ vàng mỏ kim cương. còn việt nam có mỏ lồn là hay :3",thì đã nói rồi thế_giới người ta có mỏ bạc mỏ vàng mỏ kim_cương còn việt_nam có mỏ lồn là hay 3,22,2,HATE,2,2,1,0.9565,0.0088,0.9565,0.0347
+thứ gì á mốt làm v nữa thì chắc ăn đập,thứ gì á_mốt làm_vậy nữa thì chắc_ăn đập,8,0,CLEAN,0,0,1,0.9903,0.005,0.9903,0.0046
+:))) d' tje mj,d tje mj,3,0,CLEAN,0,0,1,0.7984,0.1839,0.7984,0.0176
+"Đơn giản đó là người SG, chứ ko phải người Tp.HCM(Đa số bake)",đơn_giản đó là người sg chứ không phải người tp hcm đa_số bake,13,2,HATE,2,2,0,0.9916,0.9916,0.0019,0.0066
+"Hết ""cực kì thuyết phục"",giờ tới mấy con bò ""sống chậm"" :)",hết cực_kì thuyết_phục giờ tới mấy con bò sống chậm,10,0,CLEAN,0,0,2,0.9887,0.0074,0.004,0.9887
+Lại sống như rau dền :)))),lại sống như rau dền,5,1,OFFENSIVE,1,1,0,0.9921,0.9921,0.005,0.0029
+có nghe tộc trưởng nói không.. đợi cái loz,có nghe_tộc trưởng nói không đợi cái loz,8,1,OFFENSIVE,1,1,2,0.9684,0.0062,0.0255,0.9684
+Ôi pha đonate :)),ôi pha đonate,3,0,CLEAN,0,0,1,0.9365,0.0564,0.9365,0.0071
+Xe hơi say cm 😂,xe_hơi say cm,3,1,OFFENSIVE,1,1,0,0.9961,0.9961,0.0021,0.0018
+Mom cho ko moc dc nga Voi,mom cho không moc được nga voi,7,1,OFFENSIVE,1,1,0,0.9782,0.9782,0.006,0.0158
+"Công nhận Trung Quốc chưa bao giờ bành trướng thế lực như bây giờ. Dám đưa ra những yêu cầu trời ơi đất hỡi, mỗi thù trăm năm vs phương Tây và phát xít Nhật, đang trả thù từ từ nè",công_nhận trung_quốc chưa bao_giờ bành_trướng thế_lực như bây_giờ dám đưa ra những yêu_cầu trời_ơi đất hỡi mỗi thù trăm_năm vs phương_tây và phát_xít nhật đang trả_thù từ_từ nè,28,0,CLEAN,0,2,2,0.9671,0.0289,0.004,0.9671
+"Đinh Nhật Uy cho ra lò ""chuyện vui cuối tuần "" vui thật !! vì chỉ xin đi phụ bếp mà đòi phải biết 29 thứ tiếng thì gắt quá! Chỉ có bác hù mới đủ thông minh để đáp ứng sự đòi hỏi này vì nghe nói bác củng biết 29 thứ tiếng,phải công nhận bác sáng suốt qu",đinh nhật_uy cho ra_lò chuyện vui cuối tuần vui thật vì chỉ xin đi phụ_bếp mà đòi phải biết 29 thứ tiếng thì gắt quá chỉ có bác hù mới đủ thông_minh để đáp_ứng sự đòi_hỏi này vì nghe nói bác củng_biết 29 thứ tiếng phải công_nhận bác sáng_suốt qu,50,2,HATE,2,2,0,0.9124,0.9124,0.0037,0.0838
+"Đậu mạ! Vịt nôm cái méo gì cũng có thể xảy ra. Trốn truy nã tại địa phương 26 năm, làm chánh văn phòng tại địa phương. Tất cả là nhờ sự lãnh đạo tài tình của đảng và nhà nước. Dân ta cứ yên tâm mà chết dần chết mòn đi",đậu mạ vịt nôm cái méo gì cũng có_thể xảy ra trốn truy_nã tại địa_phương 26 năm làm chánh văn_phòng tại địa_phương tất_cả là nhờ sự lãnh_đạo tài_tình của đảng và nhà_nước dân ta cứ yên_tâm mà chết dần chết mòn đi,42,2,HATE,2,2,1,0.6685,0.0348,0.6685,0.2967
+Yêu ai thì kệ mẹ nó. Đăng làm cc gì,yêu ai thì kệ mẹ nó đăng làm cc gì,10,2,HATE,2,1,1,0.9836,0.0022,0.9836,0.0142
+VN đóng hộp gửi sang nước k ngột ngạt thôi,vn đóng_hộp gửi sang nước không ngột_ngạt thôi,8,0,CLEAN,0,0,2,0.7788,0.2023,0.0189,0.7788
+Người ta đi vào chỗ nổi tiếng chứ ai giam đi vào mấy chống này,người ta đi vào chỗ nổi_tiếng chứ ai giam đi vào mấy chống này,14,0,CLEAN,0,2,2,0.5988,0.2767,0.1245,0.5988
+Úi zồi sắp đến đoạn phệt thì lại bị bắt,úi zồi sắp đến đoạn phệt thì lại bị bắt,10,0,CLEAN,0,0,1,0.9692,0.0148,0.9692,0.0161
+"thế bạn biết đường chạy qua cánh đồng , chỉ qua 2 3 nhà dân , đền bù cho dân 200 triệu . ghi vào sổ sách 500 triệu không :v . chưa kể nhiều ông quan chức to kí duyệt là đều phải có lót tay , mỗi dụ án lót tay chả mấy khi dưới đơn vị "" tỷ đồng """,thế bạn biết đường chạy qua cánh đồng chỉ qua 2 3 nhà dân đền_bù cho dân 200 triệu ghi vào sổ_sách 500 triệu không vậy chưa kể nhiều ông quan_chức to kí_duyệt là đều phải có lót tay mỗi dụ_án lót tay chả_mấy khi dưới đơn_vị tỷ đồng,49,0,CLEAN,0,0,2,0.9801,0.0139,0.0059,0.9801
+:D,d,1,0,CLEAN,0,0,1,0.8385,0.1514,0.8385,0.01
+Chỗ này chắc buổi sáng và buổi chiều là cũng tắc đg như hn ấy nhỉ sao k lam cái cầu tạm cho dân đi nhỉ... quan tiền thì nhiều dân nghèo vẫn hoàn nghèo,chỗ này chắc buổi sáng và buổi chiều là cũng tắc đang như hn ấy nhỉ sao không lam cái cầu tạm cho dân đi nhỉ_quan tiền thì nhiều dân_nghèo vẫn hoàn nghèo,33,0,CLEAN,0,2,1,0.6092,0.1144,0.6092,0.2764
+Mồm vén lên như cái bồn cầu,mồm vén lên như cái bồn cầu,7,2,HATE,2,1,0,0.5858,0.5858,0.3493,0.0649
+Nghe như đấm vào tai,nghe như đấm vào tai,5,1,OFFENSIVE,1,1,0,0.9892,0.9892,0.0082,0.0025
+Lưu Nguyễn thâm vl :))))),lưu nguyễn_thâm_vãi,2,0,CLEAN,0,0,1,0.9756,0.0199,0.9756,0.0045
+Ức chế vl... Bán bó rau lời ko bao nhiêu..,ức_chế vãi bán_bó rau lời không bao_nhiêu,7,0,CLEAN,0,1,1,0.8764,0.1196,0.8764,0.004
+Nguyễn Thuận =)) tư tưởng rừng rú gì v,nguyễn_thuận_tư_tưởng rừng_rú gì vậy,4,2,HATE,2,0,1,0.5892,0.3736,0.5892,0.0373
+. Chủ tịch giả vờ 😆,chủ_tịch giả_vờ,2,0,CLEAN,0,0,2,0.5047,0.4806,0.0147,0.5047
+Căn bản nhà nc k làm dc như thế. Các chú bộ đội hay 1 ban ngày có đi làm vì lệnh phát ra trên đồn xuống chứ ai bão gió lũ lụt chịu đi ăn tiền dân nhận tiền thuế phải vậy kêu ca gì,căn_bản nhà nc không làm được như_thế các chú bộ_đội hay 1 ban_ngày có đi làm vì lệnh phát ra trên đồn xuống chứ ai bão_gió lũ_lụt chịu đi ăn_tiền dân nhận tiền thuế phải vậy kêu_ca gì,38,0,CLEAN,0,0,2,0.8979,0.0917,0.0104,0.8979
+Đươc ! Đẻ bằng hậu môn à ?,đươc đẻ bằng hậu_môn à,5,0,CLEAN,0,0,1,0.9292,0.064,0.9292,0.0067
+Thời trang với thời chủng nhìn mất hết cảm tình 😬😬,thời_trang với thời_chủng nhìn mất hết cảm_tình,7,1,OFFENSIVE,1,1,0,0.755,0.755,0.239,0.006
+Ghê vãi,ghê vãi,2,1,OFFENSIVE,1,1,0,0.7957,0.7957,0.1998,0.0044
+ghê gớm,ghê_gớm,1,0,CLEAN,0,0,1,0.9764,0.0198,0.9764,0.0038
+thằng chụp ảnh làm trong này chắc cbi bị điều tra :3,thằng chụp ảnh làm trong này chắc cbi bị điều_tra 3,11,0,CLEAN,0,0,2,0.8662,0.1194,0.0144,0.8662
+Hiện đối tượng vẫn đang nhởn nhơ ngoài vòng pháp luật,hiện đối_tượng vẫn đang nhởn_nhơ ngoài vòng pháp_luật,8,0,CLEAN,0,0,2,0.6256,0.3511,0.0232,0.6256
+"Cánh hoa ở hàn quốc thôi, về việt nam nó là cái l** đấy 🤣🤣🤣🤣",cánh hoa ở hàn_quốc thôi về việt_nam nó là cái l đấy,12,0,CLEAN,0,1,1,0.9912,0.0045,0.9912,0.0043
+Anh em cc,anh_em cc,2,1,OFFENSIVE,1,1,2,0.9891,0.0062,0.0047,0.9891
+thực sự ra chẳng có phản động đâu chỉ co người DÂN nói sự thật thì bị chính quyền chụp mũ gọi là phản động,thực_sự ra chẳng có phản_động đâu chỉ co người_dân nói sự_thật thì bị chính_quyền chụp mũ gọi_là phản_động,18,0,CLEAN,0,1,1,0.958,0.0333,0.958,0.0086
+"Phan Lặng Yên Tui nhớ ko nhầm thì có người nói bộ về Gạc Ma là cóp nhặt đủ các nơi lung tung về thì phải. Chưa tính đến việc ông Lương chém gió nữa (công binh hải quân ko được nổ súng TRƯỚC, chứ ko phải là KHÔNG ĐƯỢC nổ súng)",phan_lặng_yên tui nhớ không nhầm thì có người nói_bộ về gạc_ma là cóp nhặt đủ các nơi lung_tung về thì phải chưa tính đến việc ông lương_chém gió nữa công_binh hải_quân không được nổ_súng trước chứ không phải là không được nổ_súng,42,0,CLEAN,0,0,2,0.9439,0.0499,0.0062,0.9439
+Nghe 1 lần thì mình thấy không hay :)) nghe thêm vài lần ngẫm lời bài hát thì nghiện mẹ rồi 😌,nghe 1 lần thì mình thấy không hay nghe thêm vài lần ngẫm lời bài hát thì nghiện mẹ rồi,20,0,CLEAN,0,0,1,0.5106,0.4848,0.5106,0.0046
+Sống chậm thôi các bácc 🤦🏼‍♀️,sống chậm thôi các bácc,5,0,CLEAN,0,0,2,0.9881,0.0081,0.0039,0.9881
+Đtr v~,đtr vậy,2,0,CLEAN,0,0,1,0.9907,0.0061,0.9907,0.0032
+Nhìn bản mặt Thành Long nhầm tưởng nhân hậu nhưng bản chất vô hậu,nhìn bản mặt thành long nhầm_tưởng nhân_hậu nhưng bản_chất vô_hậu,10,2,HATE,2,2,0,0.9748,0.9748,0.0027,0.0225
+tộc chưởng cu to như lõi giấy wc,tộc chưởng cu to như lõi giấy wc,8,0,CLEAN,0,0,2,0.9064,0.0791,0.0145,0.9064
+Đến cảnh này lại đéo nhịn cười được cmay ạ =)),đến cảnh này lại đéo nhịn cười được cmay ạ,10,0,CLEAN,0,1,1,0.9836,0.0132,0.9836,0.0032
+Duy Khánh thế cứ đàn bà thì mới không biết đúng sai à ?? 😀 ??,duy_khánh thế cứ đàn_bà thì mới không biết đúng sai à,11,0,CLEAN,0,1,1,0.7737,0.2125,0.7737,0.0138
+"Ông Dần là 3/// nhưng là 3/// zui, khác vs 3/// lol kia",ông dần là 3 nhưng là 3 zui khác vs 3 lol kia,13,2,HATE,2,2,0,0.9196,0.9196,0.0094,0.071
+"Thích cô MH, mà LKC thì nc hơi vô duyên",thích cô mh mà lkc thì nc_hơi vô_duyên,8,0,CLEAN,0,0,1,0.6103,0.376,0.6103,0.0137
+Bác Đảng muôn lăm,bác đảng muôn_lăm,3,0,CLEAN,0,0,2,0.9245,0.0695,0.006,0.9245
+Bố lạy mày Nhung ơi là Nhung,bố lạy mày nhung ơi_là nhung,6,2,HATE,2,1,0,0.966,0.966,0.0035,0.0305
+Thi đéo làm được bài mà nhìn mặt lão Độ đéo nhịn cười được. Ae ai như t k,thi đéo làm được bài mà nhìn mặt lão_độ đéo_nhịn cười được ae ai như tao không,17,0,CLEAN,0,1,1,0.7178,0.2686,0.7178,0.0136
+Nhung ơi Nhung ra đây mà xem nè em :) xem em đã làm j cho đất nước nè :),nhung ơi nhung ra đây mà xem nè em xem em đã làm_gì cho đất_nước nè,16,2,HATE,2,1,0,0.9953,0.9953,0.0023,0.0025
+No vừa thôi ma ơi . nó nở banh hang giờ...,no vừa thôi ma ơi nó nở banh hang giờ,10,2,HATE,2,0,1,0.5902,0.3611,0.5902,0.0487
+"Quỳnh Hương thật, t tưởng nó viết thiếu dấu nặng, mẹ nó chứ",quỳnh_hương thật tao tưởng nó viết thiếu dấu nặng mẹ nó chứ,12,2,HATE,2,1,1,0.9643,0.0322,0.9643,0.0035
+Thượng đẳng j mà chậm quá trend này Việt Nam làm biết bao lâu rồi 🙊,thượng_đẳng gì mà chậm quá trend này việt_nam làm biết_bao_lâu rồi,11,0,CLEAN,0,0,2,0.975,0.0195,0.0055,0.975
+Tuần sau mình đi ăn burn real đi Thiên Khánh Cao Tuyet Nhung Dang Trâu Con Le Mynhut,tuần sau mình đi ăn burn_real đi thiên_khánh cao_tuyet nhung dang trâu con le mynhut,15,0,CLEAN,0,0,1,0.9764,0.0123,0.9764,0.0113
+"quay được phim rồi thì lấy xe bắt chó ra bắt đi , chờ gì nữa",quay được phim rồi thì lấy xe bắt chó ra bắt đi chờ gì nữa,15,1,OFFENSIVE,1,1,0,0.9056,0.9056,0.0831,0.0113
+Sau này cố mà thành ông này bà nọ em ạ. Ko làm đc gì là ăn chửi ngập mặt :)),sau_này cố mà thành ông này bà nọ em ạ không làm được gì là ăn_chửi ngập mặt,18,0,CLEAN,0,2,1,0.9857,0.0094,0.9857,0.0049
+Chi em ma chui lon ke cho nguoi ta nghe nguoi ta cuoi hay ho gi,chi em ma chui lon ke cho nguoi ta nghe nguoi ta cuoi hay ho gi,16,0,CLEAN,0,2,2,0.9843,0.0106,0.0051,0.9843
+"Độ Mixi : 2 viên ốp rồi Bô ơi , yếu vãi lon rồi em ơi",độ mixi 2 viên ốp rồi bô ơi yếu vãi_lon rồi em ơi,13,0,CLEAN,0,0,1,0.9337,0.0535,0.9337,0.0128
+duanhuaditron là clgt :v,duanhuaditron là clgt vậy,4,1,OFFENSIVE,1,0,2,0.9884,0.0073,0.0044,0.9884
+QĐ ít lien quan lắm,qđ ít lien_quan lắm,4,0,CLEAN,0,0,2,0.8126,0.1152,0.0722,0.8126
+Nghe thấy mà chán jack vào kicm rời xa là sai lầm của cả 2,nghe thấy mà chán jack vào kicm rời xa là sai_lầm của cả 2,14,0,CLEAN,0,1,1,0.9509,0.0426,0.9509,0.0065
+Trung gia cát,trung_gia cát,2,0,CLEAN,0,1,2,0.9716,0.0194,0.009,0.9716
+Nguyễn Nghĩa mi lúc mô ko nứng,nguyễn_nghĩa_mi lúc mô không nứng,5,2,HATE,2,1,1,0.4753,0.1585,0.4753,0.3662
+Già mà tập quyền vậy...coi...khỏe...re...,già mà tập_quyền vậy coi khỏe re,7,0,CLEAN,0,0,2,0.7057,0.1355,0.1588,0.7057
+Thắm thum thủm,thă mày thum thu mày,5,0,CLEAN,0,0,2,0.964,0.0317,0.0043,0.964
+@Kỹ Năng Sinh Tồn ngáo đá hả bạn có làm j bn chưa mà chửi người ta,kỹ_năng sinh_tồn ngáo đá hả bạn có làm_gì bao_nhiêu chưa mà chửi người ta,14,2,HATE,2,2,0,0.4666,0.4666,0.4432,0.0903
+M biết ASS là gì kh ?,mày biết ass là gì không,6,0,CLEAN,0,0,1,0.8754,0.1107,0.8754,0.014
+Chán không thèm nói!,chán không thèm nói,4,1,OFFENSIVE,1,1,0,0.9941,0.9941,0.004,0.0019
+Có kg chị một ngàn đô lận đó nhe,có không chị một ngàn đô_lận đó nhe,8,0,CLEAN,0,0,2,0.4979,0.4921,0.01,0.4979
+Con linh loc nay chat kiep sau no moi noi chuyen dang hoang lai.,con linh_loc nay chat kiep sau no moi noi chuyen dang hoang_lai,12,0,CLEAN,0,2,2,0.8205,0.1689,0.0106,0.8205
+Dương Quỳnh anh Trung lờ đờ,dương_quỳnh anh trung_lờ đờ,4,0,CLEAN,0,0,2,0.5461,0.3529,0.1009,0.5461
+về 572 gia định mà đòi đất ....kkkkkk..già mà ngu vl,về 572 gia_định mà đòi đất không già mà ngu vãi,11,2,HATE,2,1,1,0.9872,0.007,0.9872,0.0058
+Giúp nguoi bi nan cap thoi . Phai co trai tim nhan ai. .ai cung co dong co lam nguoi tốt . Ung ho liên . Ngưỡng mo,giu p_nguoi bi_nan cap thoi_phai co_trai tim nhan ai_ai cung co_dong co_lam nguoi_tô tao ung_ho liên_ngươ ng_mo,17,0,CLEAN,0,2,1,0.4583,0.3974,0.4583,0.1443
+Trần Ngọc Dương dm het fan cung roi nha,trần ngọc_dương dm het fan cung_roi nha,7,0,CLEAN,0,2,2,0.8635,0.1001,0.0364,0.8635
+Tội đì chây chíp ghê 😩😩😩,tội đì chây chíp ghê,5,0,CLEAN,0,0,1,0.9835,0.0123,0.9835,0.0042
+Ở việt nam đó là 1 sự xúc phạm 😂,ở việt_nam đó là 1 sự xúc_phạm,7,0,CLEAN,0,0,1,0.7356,0.2532,0.7356,0.0112
+Bài hát phải nói là như con cac.,bài hát phải nói là như con cac,8,2,HATE,2,1,1,0.8396,0.1293,0.8396,0.0311
+"Nếu như mà tôi trẻ lại khoảng 25 tuổi thì tôi chắc chắn sẽ xung phong đi NVQS, đi nghĩa vụ là tốt giúp ích cho Tổ Quốc. Chán mấy thanh niên bây giờ quá. - Độ Chẹt",nếu_như mà tôi trẻ lại khoảng 25 tuổi thì tôi chắc_chắn sẽ xung_phong đi nvqs đi nghĩa_vụ là tốt giúp_ích cho tổ_quốc chán mấy thanh_niên bây_giờ quá_độ chẹt,28,0,CLEAN,0,1,2,0.6013,0.3833,0.0154,0.6013
+Đình Quang ê đẹp trai vll ra bảo xấu đcm đây mới xàm l nàyy,đình_quang ê đẹp_trai vll ra bảo xấu đcm đây mới xàm l nàyy,13,1,OFFENSIVE,1,1,2,0.4773,0.0696,0.453,0.4773
+Yêu gần còn có bầu với thằng khác huống chi là đi ngoài :)),yêu gần còn có bầu với thằng khác huống_chi là đi ngoài,12,0,CLEAN,0,0,1,0.9361,0.0599,0.9361,0.004
+đ nhặt đc mồm với nỗi nhục của bạn này :v,đ nhặt được mồm với nỗi nhục của bạn này vậy,11,1,OFFENSIVE,1,1,2,0.9891,0.006,0.0048,0.9891
+Trung đẹp đấy mà đéo ngầu bằng tao đâu 🤪,trung_đẹp đấy mà đéo ngầu bằng tao đâu,8,0,CLEAN,0,1,1,0.5581,0.4342,0.5581,0.0077
+Vấn đề ở đây là trong nước cần phải đào tạo và dân mình thất nghiệp đầy ra đó,vấn_đề ở đây là trong nước cần phải đào_tạo và dân mình thất_nghiệp đầy ra đó,16,0,CLEAN,0,0,1,0.7709,0.0839,0.7709,0.1452
+ặc ặc hóng tin,ặc ặc hóng tin,4,0,CLEAN,0,0,1,0.9817,0.0154,0.9817,0.0029
+Xin mời :))) to mồm đòi làm cách mạng vậy làm đi :))) lật đổ cộng sản đi :))),xin mời to_mồm đòi làm cách_mạng vậy làm đi lật_đổ cộng_sản đi,12,0,CLEAN,0,0,2,0.9819,0.0124,0.0057,0.9819
+Nhìn cái mặt nó kìa. Cặn bã 🖕🖕,nhìn cái mặt nó kìa cặn bã,7,2,HATE,2,2,1,0.9486,0.0059,0.9486,0.0456
+Minh Nhật chuẩn cmnr. Jack tuổi j so dislike :))) haha. K atm là ca sĩ duy nhất trên thế giới mà k cần hát mà,minh_nhật chuẩn cmnr jack tuổi gì so dislike vui không atm là ca_sĩ duy_nhất trên thế_giới mà không cần hát mà,21,2,HATE,2,2,0,0.9929,0.9929,0.0029,0.0042
+Con sâu gặm tiền,con sâu gặm tiền,4,1,OFFENSIVE,1,2,2,0.9303,0.0366,0.0331,0.9303
+Nhạc của Khánh nó vẫn khác. Ông nội này giả khổ thôi. Mấy cái thằng mắt lươn tin sao được.,nhạc của khánh nó vẫn khác ông nội này giả_khổ thôi mấy cái thằng mắt lươn tin sao được,19,0,CLEAN,0,0,2,0.9374,0.0565,0.0061,0.9374
+Nhìn del hỉu j luôn,nhìn del_hỉu gì luôn,4,1,OFFENSIVE,1,0,0,0.9877,0.9877,0.01,0.0023
+Cô nay ko con tư nao (( đê noi ),cô nay không con tư_nao đê noi,7,0,CLEAN,0,0,2,0.9684,0.0264,0.0051,0.9684
+"K đc public đ/c các ông ơi,có duyên sẽ gặp thôi",không được public đ c các ông ơi có duyên sẽ gặp thôi,13,0,CLEAN,0,0,1,0.6769,0.3154,0.6769,0.0077
+co lam. gi giau vay co day con lam voi con lam hoai ma ko du an,co_lam gi giau vay co_day con lam_voi con lam_hoai ma không du_an,12,0,CLEAN,0,2,2,0.5743,0.0341,0.3916,0.5743
+Tao gõ chớt mẹ mày chứ ở đó mà múa . Abe said :)),tao gõ chớt mẹ mày chứ ở đó mà múa abe said,12,2,HATE,2,1,1,0.8943,0.1007,0.8943,0.0049
+"Ý là bạn thích đc dí lồn vào mặt à? Vậy thì cũng giống mình. Sướng mà, nhờ 😂",ý là bạn thích được dí lồn vào mặt à vậy thì cũng giống mình sướng mà nhờ,18,2,HATE,2,2,1,0.9586,0.0112,0.9586,0.0302
+đm biết cái gương đó là tiền ai mua không mà dám cắt =)) đm thằng nào cắt kính,đm biết cái gương đó là tiền ai mua không mà dám cắt đm thằng nào cắt kính,18,2,HATE,2,2,1,0.992,0.0042,0.992,0.0038
+Đợi cl thêm câu địt chị m độ said :v,đợi cl thêm câu địt chị mày độ said vậy,10,1,OFFENSIVE,1,1,2,0.8054,0.0077,0.187,0.8054
+Không ngờ các bác hàn quốc gian hơn e hàn sẻng .,không ngờ các bác hàn_quốc_gian hơn em hàn sẻng,9,0,CLEAN,0,0,2,0.9888,0.0078,0.0034,0.9888
+lanh dao cua xhcs phat bieu hay that.dag mat wa nhi!,lanh dao cua xhcs phat bieu hay that đang mat quá nhi,12,0,CLEAN,0,1,2,0.848,0.0687,0.0833,0.848
+"có tiền cứ làm,chỉ có bọn không có tiền làm mới ý kiến lọ chai",có tiền cứ làm chỉ có bọn không có tiền làm mới ý_kiến lọ chai,15,2,HATE,2,2,0,0.9937,0.9937,0.0029,0.0034
+Phương Thảo đừng có thằng boom ăn bậy bạ nha m,phương_thảo đừng có thằng boom ăn bậy_bạ nha mày,9,0,CLEAN,0,0,2,0.9838,0.0126,0.0036,0.9838
+Dừa cái lone lắm nghe 🙃🙃🙃,dừa cái lone lắm nghe,5,1,OFFENSIVE,1,1,0,0.9652,0.9652,0.0311,0.0038
+là cò tè há mõm,là cò_tè há mõm,4,0,CLEAN,0,0,1,0.867,0.0984,0.867,0.0346
+awww man khịa,aw_man khịa,2,0,CLEAN,0,1,1,0.871,0.1134,0.871,0.0156
+Trym to,trym to,2,1,OFFENSIVE,1,0,0,0.9963,0.9963,0.0019,0.0018
+Gucciii 🙈,guccii,1,0,CLEAN,0,0,1,0.5358,0.414,0.5358,0.0502
+sao bạn nói ngta nvay. ban có giỏi bạn bỏ 500trieu ra nhu a ay di. bạn ko làm MC nổi tiếng như a ay di. cùng là con ng mà. ng nổi tiếng tiếng nói nó pai khác ng bình thường chứ. bạn thử đăng stt nvay xem có ai ủng hộ b ko. nói pai ngi b ak.,sao bạn nói ngta nvay ban có giỏi bạn bỏ 500 trieu ra nhu anh ay di_bạn không làm mc nổi_tiếng như anh ay di_cùng là con ng mà ng nổi_tiếng tiếng_nói nó pai khác ng bình_thường chứ bạn thử đăng stt nvay xem có ai ủng_hộ b không nói pai ngi b ak,54,0,CLEAN,0,2,2,0.7675,0.2206,0.0119,0.7675
+Phó Chủ nhiệm UBKTTP Tân an(Long an) không có bằng cấp 3 nhưng lý luận CT rất giỏi,phó chủ_nhiệm ubkttp_tân_an long_an không có bằng_cấp 3 nhưng lý_luận ct rất giỏi,13,2,HATE,2,0,0,0.9927,0.9927,0.0032,0.0041
+ngồn bồn tắm húp mì tôm thái. :)),ngồn bồn tắm húp mì tôm_thái,6,0,CLEAN,0,0,1,0.862,0.1334,0.862,0.0047
+Gớm xuống top2 có 1 hôm mà unti cno gáy kinh quá tộc trưởng ak 😂,gớm xuống top2 có 1 hôm mà unti cno_gáy kinh quá_tộc trưởng ak,13,0,CLEAN,0,2,1,0.4584,0.1468,0.4584,0.3948
+k rãnh loz làm gì lên xem abe,không rãnh loz làm gì lên xem abe,8,2,HATE,2,1,1,0.9921,0.0041,0.9921,0.0038
+Gặp lol xỉu 3 ngày,gặp lol xỉu 3 ngày,5,0,CLEAN,0,0,1,0.9916,0.0048,0.9916,0.0036
+"Với tài năng của thủ tướng cộng với trí tuệ của ông Kiên, minh tin rằng năm sau kinh tế VN sẽ hóa rồng lộn xuống thiên đường XHCN",với tài_năng của thủ_tướng cộng với trí_tuệ của ông kiên_minh tin rằng năm sau kinh_tế vn sẽ hóa rồng_lộn xuống thiên_đường xhcn,22,2,HATE,2,2,0,0.9165,0.9165,0.0067,0.0768
+"chúng nó quên nhiều thứ, nhưng ăn cướp là việc chúng nó không bao giờ quên",chúng_nó quên nhiều thứ nhưng ăn_cướp là việc chúng_nó không bao_giờ quên,12,2,HATE,2,2,0,0.994,0.994,0.0028,0.0032
+Cố gắng làm cán bộ.giết người ko sao nhé,cố_gắng làm cán_bộ giết người không sao nhé,8,2,HATE,2,2,1,0.8836,0.0166,0.8836,0.0998
+Nghiệp Quật,nghiệp quật,2,1,OFFENSIVE,1,1,0,0.8251,0.8251,0.1668,0.0081
+Trường Giang ụa . Bả biết bả nhiễm s bả đ chịu khai báo cách ly đi . Chị bả nhiễm nguy cơ lay cho bả là rất cao . Hành khánh trên chuyến bay đó cũg bị nhiễm theo . Lớn r chứ phải con nít con noi,trường giang_ụa bả biết bả nhiễm sao bả đ chịu khai_báo cách_ly đi chị bả nhiễm nguy_cơ lay cho bả là rất cao_hành_khánh trên chuyến bay đó cũg bị nhiễm theo lớn rồi chứ phải con_nít con noi,38,2,HATE,2,2,0,0.9947,0.9947,0.0014,0.0039
+Troi oi ba nay ..giau wua thi noi lam gi...thoi buoi gio .giau wua thi ke di ai dau an het cua cua no..ma dua len mang phe phan..mot thoi len voi xuong cho,troi oi ba nay giau wua thi noi_lam gi_thoi buoi giờ giau wua thi ke di_ai dau an_het cua cua no ma dua len mang phe phan_mot_thoi len voi xuong cho,31,0,CLEAN,0,0,2,0.9888,0.0071,0.004,0.9888
+Đồn ý kiến vs bác thớt.Thằng đó tống tiền đích cmn thực r ấy chứ.Cho vào tù nhanh hộ cái :)),đồn ý_kiến vs bác thớt thằng đó tống_tiền đích_cmn thực rồi ấy chứ cho vào tù nhanh hộ cái,19,2,HATE,2,2,1,0.8775,0.033,0.8775,0.0895
+Trường t không được mặc áo dài cm ạ:))),trường tao không được mặc áo_dài cm ạ,8,0,CLEAN,0,0,1,0.9588,0.0361,0.9588,0.0051
+Thùng rác mà cũng phải nhập TQ đúng là pó tay !,thùng rác mà cũng phải nhập tq đúng là pó tay,11,0,CLEAN,0,1,1,0.5902,0.4017,0.5902,0.0081
+H mới bík.  Đuờq quyền là bà nỳ sáng chế,giờ mới bík đuờq quyền là bà nỳ sáng_chế,9,0,CLEAN,0,0,2,0.9703,0.0238,0.0059,0.9703
+Ra đường nhớ cằm theo não,ra đường nhớ cằm theo não,6,2,HATE,2,1,0,0.9498,0.9498,0.0434,0.0068
+"Chưa thử loz xách tay bao h,có thì ới 😂",chưa thử loz xách tay bao_giờ có thì ới,9,1,OFFENSIVE,1,1,0,0.9956,0.9956,0.0024,0.002
+Đánh nó đi thầy,đánh nó đi thầy,4,0,CLEAN,0,0,2,0.5169,0.4432,0.0399,0.5169
+Khánh Vy tạm gọi là có học nên chính tả không viết sai được như bạn ạ 😞 gà với dê mà cho vào gia súc thì chắc phải học bạn 1 khoá,khánh vy tạm gọi_là có_học nên chính_tả không viết sai được như bạn ạ gà với dê mà cho vào gia_súc thì chắc phải học bạn 1 khóa,28,0,CLEAN,0,0,2,0.5895,0.2694,0.1411,0.5895
+Trân Dân.mày vê VN tao sē Công Đâu Mày....Nhơ lơi tao nói...Thương bé lăm,trân dân mày vê vn tao s công_đâu mày nhơ lơi_tao nói thương_bé lăm,14,2,HATE,2,2,0,0.992,0.992,0.0022,0.0058
+Làm tí game gủng cho đỡ puồn,làm tí game gủng cho đỡ puồn,7,0,CLEAN,0,0,1,0.9813,0.0149,0.9813,0.0038
+Manh thi song yeu thi chet,manh thi song yeu thi chet,6,1,OFFENSIVE,1,0,0,0.9962,0.9962,0.0019,0.0019
+Ns ra làm gì để rồi lại bị vùi dập,nói ra làm gì để rồi lại bị vùi_dập,9,0,CLEAN,0,0,1,0.9328,0.0627,0.9328,0.0045
+Vn ma,vn ma,2,0,CLEAN,0,0,2,0.5828,0.389,0.0283,0.5828
+Sự lươn lẹo là vậy,sự lươn_lẹo là vậy,4,0,CLEAN,0,0,1,0.9679,0.0267,0.9679,0.0054
+Miện giống lôm trâu,miện giống lôm trâu,4,1,OFFENSIVE,1,1,0,0.991,0.991,0.0046,0.0044
+🤦‍♀️😪 mạng mẽo như cức chỗ các bác có v không,mạng mẽo như cức chỗ các bác có vậy không,10,0,CLEAN,0,1,1,0.9911,0.0037,0.9911,0.0052
+muốn ckầm kảm,muốn ckầm kảm,3,0,CLEAN,0,0,1,0.9879,0.0061,0.9879,0.006
+Bút hình con c,bu tao hi_nh con c,5,1,OFFENSIVE,1,0,0,0.5249,0.5249,0.4232,0.052
+Sena nhìn mặc như lồn,sena nhìn mặc như lồn,5,2,HATE,2,1,1,0.9673,0.0041,0.9673,0.0286
+Tốt nhất là giết bỏ đi vài thành phần óc chó đó là vừa,tốt nhất là giết bỏ đi vài thành_phần óc chó đó là vừa,13,1,OFFENSIVE,1,2,2,0.9904,0.0049,0.0046,0.9904
+"Việt Nam phải khéo,  CS Việt Nam không đến nỗi ác độc như TQ đâu.  Về VN đi rồi biết,  thiệt đó.",việt_nam phải khéo có việt_nam không đến_nỗi ác_độc như tq đâu về vn đi rồi biết thiệt đó,18,0,CLEAN,0,0,2,0.9255,0.0684,0.0061,0.9255
+dm éo học thì làm cc gì biết chữ,dm em o ho c thi_la mày cc gi biê tao chư,12,1,OFFENSIVE,1,2,2,0.9904,0.0057,0.004,0.9904
+Bú l ngọc Trinh sẽ tinh,bú l ngọc_trinh sẽ tinh,5,2,HATE,2,2,1,0.99,0.0026,0.99,0.0073
+Chị ba nói chuyện hây wa chị ba ơi,chị ba nói_chuyện hây quá chị ba ơi,8,0,CLEAN,0,0,2,0.9856,0.0109,0.0035,0.9856
+Mỗi lần lên sóng là đeo vàng làm như giàu lắm hay sao mà khoe của thấy ghê.còn cái mặt mình nhìn chung ko có 1 chỗ nào thiện cảm hết.nhìn mặt là biết cái thứ đàn bà độc mồm độc miệng.hung dữ.nói tục chửi thề v...v tưởng z là hay lắm,mỗi lần lên sóng là đeo vàng làm như giàu lắm hay sao mà khoe của thấy ghê còn cái mặt mình nhìn_chung không có 1 chỗ nào thiện_cảm hết nhìn mặt là biết cái thứ đàn_bà độc_mồm độc_miệng hung_dữ nói_tục chửi thề vậy vậy tưởng vậy là hay lắm,50,2,HATE,2,2,1,0.9637,0.0045,0.9637,0.0318
+Thấy ăn hại thế thì đừng làm quan,thấy ăn_hại thế thì đừng làm quan,7,0,CLEAN,0,0,1,0.9137,0.0471,0.9137,0.0391
+Nguyễn Đức Ánh khôn hơn cả họ nhà m.,nguyễn_đức_ánh khôn hơn cả họ nhà mày,7,2,HATE,2,0,0,0.9756,0.9756,0.0042,0.0202
+O ko thây so đsng chông dich ma con tam trang đang .,o không thây so đsng chông dich ma con tam_trang đang,11,0,CLEAN,0,0,2,0.9878,0.0089,0.0033,0.9878
+Xh gìơ lợi dụng nhau mà sống đi. :),xh giờ lợi_dụng nhau mà sống đi,7,0,CLEAN,0,1,1,0.9898,0.0065,0.9898,0.0036
+Cmt dau,comment dau,2,0,CLEAN,0,0,1,0.9418,0.0524,0.9418,0.0058
+Ô thế thằng thớt chưa nghe vụ:Chạy 30 tỷ để làm ĐBQH ah?,ô thế thằng thớt chưa nghe vụ chạy 30 tỷ để làm đbqh à,14,0,CLEAN,0,2,2,0.9387,0.052,0.0093,0.9387
+Con lam doan ko chi,con lam_doan không chi,4,0,CLEAN,0,0,2,0.986,0.0104,0.0036,0.986
+Võ Công Hoàng cái lon má,võ_công_hoàng cái lon má,4,1,OFFENSIVE,1,1,2,0.9759,0.0052,0.0188,0.9759
+K thích cho đi tù ở cách li cho đỡ ngột,không thích cho đi tù ở cách li cho đỡ ngột,11,0,CLEAN,0,1,1,0.4287,0.3099,0.4287,0.2614
+Bố đéo rảnh tiếp chuyện vs acc clone,bố đéo rảnh tiếp_chuyện vs acc clone,7,1,OFFENSIVE,1,1,2,0.9889,0.0044,0.0067,0.9889
+Áo ác vậy abe :))),áo ác vậy abe,4,0,CLEAN,0,0,2,0.9349,0.047,0.0181,0.9349
+Chắc cùng cha khác ông nội vs nhung rùi !!,chắc cùng cha khác ông nội_vs nhung rồi,8,0,CLEAN,0,0,2,0.867,0.1093,0.0238,0.867
+bú cu không thầy,bú cu không thầy,4,2,HATE,2,0,1,0.8727,0.01,0.8727,0.1174
+Deo hieu luon :))),deo hieu luon,3,1,OFFENSIVE,1,1,0,0.9319,0.9319,0.0636,0.0045
+Căng đétt :)))),căng đétt,2,0,CLEAN,0,0,1,0.9921,0.0039,0.9921,0.004
+Oke Hasagi chết mọe đi 💀,oke hasagi chết mọe đi,5,1,OFFENSIVE,1,1,0,0.9958,0.9958,0.0018,0.0023
+Lên báo thì giật tít vậy chứ ngoài đời ông ko phải dậy khôn bọn CA đâu. Nó chẳng chờ cho giang hồ chém nhau xong có ng báo nó mới tới ý. Ong tưởng nó vào can thiệp chắc.,lên báo thì giật tít vậy chứ ngoài đời ông không phải dậy khôn_bọn ca đâu nó chẳng chờ cho giang_hồ chém nhau xong có ng báo nó mới tới ý_ong tưởng nó vào can_thiệp chắc,36,2,HATE,2,2,0,0.6357,0.6357,0.0296,0.3347
+Tụi t đéo nịnh tụi t thương cô vì tánh cô chân thật. M biết cái cc gì m nói,tụi tao đéo nịnh tụi tao thương cô vì tánh cô chân_thật mày biết cái cc gì mày nói,19,2,HATE,2,2,0,0.5385,0.5385,0.3603,0.1011
+"mn làm sao thế nhỉ, chửi vậy tội thân con gái nta. Tại xem não có nảy số được để mà hiểu đâu nên thấy hay làm sao được 🙂",mọi người làm_sao thế_nhỉ chửi vậy tội_thân con gái nta tại xem não có nảy_số được để mà hiểu đâu nên thấy hay làm_sao được,25,0,CLEAN,0,0,2,0.9064,0.0772,0.0163,0.9064
+Page mùi kinh :v,page mùi kinh vậy,4,0,CLEAN,0,0,1,0.9865,0.0095,0.9865,0.0039
+Dân chống nhưng quan chức không chống,dân chống nhưng quan_chức không chống,6,2,HATE,2,2,0,0.9373,0.9373,0.0126,0.0501
+Súc vật từ nhan sắc đến nhân cách súc phạm loài người quá đy,súc_vật từ nhan_sắc đến nhân_cách súc_phạm loài_người quá đy,9,2,HATE,2,2,1,0.9879,0.0026,0.9879,0.0095
+chả lên vl anh ưi,chả lên vãi anh ưi,5,0,CLEAN,0,0,1,0.5326,0.46,0.5326,0.0075
+Dkm cá chết là do k biết bơi nhá đỏ đo cái loz què̉,dkm cá chê tao là do không biê tao bơi nhá_đo đo cái loz què,15,1,OFFENSIVE,1,2,2,0.9905,0.0042,0.0053,0.9905
+Mịa mất tiền mua mạng hôm qua thì lag vl hôm nay mượt đc 1 chút thì đọc đc tin này chắc tháng sau t cắt mẹ nó mạng đi,mịa mất tiền mua mạng hôm_qua thì lag_vãi hôm_nay mượt được 1 chút thì đọc được tin này chắc tháng sau tao cắt mẹ nó mạng đi,27,1,OFFENSIVE,1,1,0,0.9489,0.9489,0.026,0.0251
+Thay ngáo đá,thay ngáo đá,3,2,HATE,2,1,0,0.9529,0.9529,0.0393,0.0078
+Duẩn Ngọc ckat 🤣,duẩn ngọc ckat,3,0,CLEAN,0,0,2,0.5554,0.0271,0.4176,0.5554
+"Ăn đc của doanh nghiệp mà dễ á :v sếp nào mà chả là người gỗ mũi dài =]] quy trình chỉ nằm trên biển hiệu :v vi phạm thì ko xử lý ! Làm thuê , quyền hạn ít thì phải chịu !",ăn được của doanh_nghiệp mà dễ á vậy sếp nào mà chả là người gỗ mũi dài quy_trình chỉ nằm trên biển_hiệu vậy vi_phạm thì không xử_lý làm_thuê quyền_hạn ít thì phải chịu,33,0,CLEAN,0,0,2,0.9344,0.0222,0.0434,0.9344
+Không có nên chửi người ta là bắt ky! Hồn láo toét miệng lưỡi quá! Khẩu nghiệp quả báo sớm lắm,không có nên chửi người ta là bắt ky_hồn láo_toét miệng lưỡi quá khẩu_nghiệp quả báo sớm lắm,18,2,HATE,2,2,1,0.9834,0.0111,0.9834,0.0054
+Các hãng nổi tiếng calvin gucci chanel đều bên nước ngoài mắc gì đem về vn cho nhỏ đó tri ân tri nghĩa....có ăn qq quá ai nói Gì cũng tin biết cuộc đời sài chai nước hoa chính hãng chưa nữa,các hãng nổi_tiếng calvin gucci chanel đều bên nước_ngoài mắc gì đem về vn cho nhỏ đó tri_ân_tri_nghĩa có ăn_qq quá ai nói gì cũng tin biết cuộc_đời sài chai nước_hoa chính hãng chưa nữa,35,1,OFFENSIVE,1,0,0,0.9959,0.9959,0.0022,0.0019
+Tộc Trưởng Buồi To Như Lõi Giấy Vệ Sinh nghỉ lễ 2/9 vui vẻ,tộc trưởng buồi to như lõi giấy vệ_sinh nghỉ lễ 2 9 vui_vẻ,13,0,CLEAN,0,0,2,0.9891,0.0068,0.0041,0.9891
+Đrr á🤣🤣,đrr á,2,0,CLEAN,0,0,1,0.9919,0.0034,0.9919,0.0047
+"Đồng chí cục trưởng chuẩn bị ăn tối món ""chao xả gich"" với đồng chí cấp phó",đồng_chí cục trưởng chuẩn_bị ăn tối món chao xả gich với đồng_chí cấp phó,14,2,HATE,2,0,0,0.9934,0.9934,0.0017,0.0048
+Huyền sạc hít khế :)),huyền_sạc hít khế,3,0,CLEAN,0,1,1,0.5163,0.4242,0.5163,0.0595
+Page này của việt tân à ? Toàn đấy nz đến lật đổ xhcn là sao ?,page này của việt_tân à toàn đấy nz đến lật_đổ xhcn là sao,13,0,CLEAN,0,2,2,0.9842,0.0122,0.0036,0.9842
+"Đặng Quốc Bìng Ý thức như loằn cx chửi, có ý thức cũng kêu sợ bị chửi nên mới v",đặng_quốc_bìng ý_thức như loằn cũng chửi có ý_thức cũng kêu sợ bị chửi nên mới vậy,16,0,CLEAN,0,1,2,0.9897,0.0064,0.0039,0.9897
+Thêm Bùi. Phương Gemi. Việt nam sài cái này lâu lắc lâu lơ rồi . Giờ bên Hàn nó ms sài kìa. @@,thêm bùi_phương gemi việt_nam sài cái này lâu_lắc lâu_lơ rồi giờ bên hàn nó mới sài kìa,17,0,CLEAN,0,0,2,0.8874,0.0861,0.0265,0.8874
+Chết đi ông ơii,chết đi ông ơii,4,1,OFFENSIVE,1,0,0,0.8843,0.8843,0.023,0.0928
+chỉ để kiếm chút tiền bằng cách vá xe thay lốp ...người ta sẵn sàng giết người !,chỉ để kiếm chút tiền bằng cách vá xe thay lốp người ta sẵn_sàng giết người,16,0,CLEAN,0,0,1,0.7384,0.2526,0.7384,0.009
+Đụ kía... cho cây vàng làm đẹp xong ... cái tánh tui hay trêu... xong giận đời lại tháo ra hay gì,đụ kía cho cây vàng làm_đẹp xong cái tánh tui hay trêu xong giận_đời lại tháo ra hay gì,19,0,CLEAN,0,1,1,0.9881,0.0079,0.9881,0.004
+Chứ dân thường có gì để ng khác đút lót ????,chứ dân_thường có gì để ng khác đút_lót,8,0,CLEAN,0,0,2,0.5804,0.1846,0.235,0.5804
+Đức Tiến anh t phản dame :)),đức tiến anh tao phản_dame,5,0,CLEAN,0,0,2,0.8173,0.1671,0.0156,0.8173
+đúng là ngu dân,đúng là ngu dân,4,2,HATE,2,1,1,0.6975,0.0063,0.6975,0.2962
+Nặng vc 😃,nặng vc,2,0,CLEAN,0,1,1,0.9869,0.0097,0.9869,0.0034
+Ông này chắc là bọn Tân thiên địa nằm vùng bên mình rồi....,ông này chắc là bọn tân_thiên_địa nằm vùng bên mình rồi,11,2,HATE,2,2,0,0.8579,0.8579,0.006,0.136
+Thanh xuân như một cái đụ,thanh_xuân như một cái đụ,5,0,CLEAN,0,1,1,0.9923,0.0039,0.9923,0.0038
+Dung Dương phải nghe a tiệp nói ing lích cơ mới buồn cười 🤣,dung_dương phải nghe anh tiệp nói ing lích_cơ mới buồn_cười,10,0,CLEAN,0,0,1,0.4181,0.2822,0.4181,0.2997
+Mấy bóng khung,mấy bóng khung,3,2,HATE,2,2,0,0.9837,0.9837,0.0034,0.0129
+BÀ THÁI ANH VĂN RẤT GIẢN DỊ VÀ GẦN GŨI VỚI DÂN _ NHƯNG RẤT KIÊN TRUNG _KIÊN CƯỜNG TRƯỚC KẺ THÙ _ BÀ LÀ TẤM GƯƠNG SÁNG CHO RẤT NHIỀU ĐỨA HÈN VỚI GIẶC ÁC VỚI DÂN THAM HƠN SÚC VẬT SOI VÀO ĐỂ THAY TÂM ĐỔI TÍNH,bà thái anh văn rất giản_dị và gần_gũi với dân nhưng rất kiên_trung kiên_cường trước kẻ_thù bà là tấm gương sáng cho rất nhiều đứa hèn với giặc ác với dân tham hơn súc_vật soi vào để thay_tâm đổi tính,40,2,HATE,2,2,0,0.6206,0.6206,0.0646,0.3147
+"Tran Manh T vẫn ko nghĩ có thể lây cho hơn chục ng khi chỉ ngồi cùng chuyến bay như vậy đc, vì muốn lây lan cũng cần p đủ nồng độ virus và tg tx nhất định",tran_manh tao vâ n không nghi_co thê_lây cho hơn chu_c ng khi chi ngô i cu ng chuyê n bay như vâ_y được vi_muô n lây_lan cu ng câ n p đu_nô ng_đô virus va tg tx nhâ tao đi nh,41,0,CLEAN,0,0,2,0.7651,0.2162,0.0187,0.7651
+K thể chấp nhận đc....,không_thể chấp_nhận được,3,0,CLEAN,0,0,1,0.9693,0.0257,0.9693,0.005
+Phạm Văn Lộc phát biểu hay nhưng mà là “yên nghỉ” nha dm😞,phạm_văn_lộc phát_biểu hay nhưng_mà là yên_nghỉ nha dm,8,1,OFFENSIVE,1,1,0,0.882,0.882,0.0882,0.0298
+Do thiếu lozz ngọc trinh nên hôm qua tiệp hơi nông nỗi,do thiếu lozz ngọc_trinh nên hôm_qua tiệp_hơi nông_nỗi,8,2,HATE,2,2,1,0.9791,0.0123,0.9791,0.0086
+Dạo này không thấy bọn dlv vào chửi phản động nữa nhỉ. Hay tiền lương thấp quá không đủ nên chuồn rồi.,da o na_y không thâ y_bo n dlv va_o chư i pha n_đô ng nư anh nhi hay tiê n lương thâ p qua không đu nên chuô n rô i,31,2,HATE,2,2,0,0.9414,0.9414,0.0138,0.0448
+Coi muốn cười muốn ỉa luôn z trời đmmmm,coi muốn cười muốn ỉa luôn vậy trời đm,9,0,CLEAN,0,0,1,0.9857,0.0112,0.9857,0.003
+@To Nhu Nguyen giả đầu m t sài r nha,to nhu_nguyen giả đầu mày tao sài rồi nha,9,2,HATE,2,2,0,0.9944,0.9944,0.002,0.0036
+Mẹc si sa đéc :)),mẹc si_sa đéc,3,0,CLEAN,0,0,2,0.9589,0.0224,0.0187,0.9589
+"ĐN đúng là TP gương mẫu, khổ cho cái SG vs HN",đn đúng là tp gương_mẫu khổ cho cái sg vs hn,11,0,CLEAN,0,1,2,0.9575,0.0179,0.0246,0.9575
+Xong quả dịch này đề nghị nhà nước cất bé đó đi 1 thời gian nhé,xong quả dịch này đề_nghị nhà_nước cất_bé đó đi 1 thời_gian nhé,12,0,CLEAN,0,0,2,0.7388,0.2417,0.0196,0.7388
+Mắc ói,mắc ói,2,1,OFFENSIVE,1,1,0,0.994,0.994,0.0041,0.0018
+Vâng JAV,vâng jav,2,0,CLEAN,0,0,1,0.9874,0.0078,0.9874,0.0047
+thối quá rồi,thối quá rồi,3,0,CLEAN,0,0,1,0.9877,0.0071,0.9877,0.0052
+Nk,nk,1,0,CLEAN,0,0,1,0.8453,0.1498,0.8453,0.0049
+"chia ra thôi, bán miền bắc cho tq cho dễ =)))",chia ra thôi bán miền bắc cho tq cho dễ,10,0,CLEAN,0,1,2,0.9578,0.0322,0.01,0.9578
+"Né rồi sao mà học , học ngu sao :))",né rồi sao mà học học ngu sao,8,0,CLEAN,0,2,1,0.8911,0.0944,0.8911,0.0145
+"Khuyên các em là em nào học lực trung bình ham chơi mà đỏ chép đc bài thì cũng vào mấy trường trung trung thôi , vào mấy trường khó đéo ra được trường đâu , như a chẳng hạn :((",khuyên các em là em nào học_lực trung_bình ham chơi mà đỏ_chép được bài thì cũng vào mấy trường trung_trung thôi vào mấy trường khó đéo ra được trường đâu như anh chẳng_hạn,33,0,CLEAN,0,1,1,0.8465,0.1249,0.8465,0.0286
+Nhìn như con bóng lải cái 🤣,nhìn như con bóng lải cái,6,1,OFFENSIVE,1,2,2,0.9883,0.0059,0.0058,0.9883
+Lú TBT,lú tbt,2,0,CLEAN,0,1,1,0.9333,0.0446,0.9333,0.0221
+Ong nay ma biet j troi,ong nay ma_biet gì troi,5,0,CLEAN,0,0,2,0.7647,0.2,0.0353,0.7647
+Mẹ chị chết để chị 100 cây vàng cái chị giàu luôn😂😂,mẹ chị chết để chị 100 cây vàng cái chị giàu luôn,12,0,CLEAN,0,2,2,0.6355,0.217,0.1474,0.6355
+Trường Giang bạn làm như Nhung là con nít =))))),trường giang_bạn làm như nhung là con_nít,7,0,CLEAN,0,0,2,0.9485,0.0444,0.0071,0.9485
+Để avata bít ngay là ngu hơn chó,để avata biết ngay là ngu hơn chó,8,2,HATE,2,1,1,0.9897,0.0028,0.9897,0.0076
+Nhiệt điện. Thì tro lò thải ra. Luyện thép thì sĩ lò thải ra. Khi các ông ký với nhau là đổ đi đâu hay mang về đất nước họ xử lý. Hay là đổ trên đất nước Việt Nam! Giờ biết kêu ai.,nhiệt_điện thì tro lò_thải ra luyện thép thì_sĩ lò_thải ra khi các ông ký với nhau là đổ đi đâu hay mang về đất_nước họ xử_lý hay_là đổ trên đất_nước việt_nam giờ biết kêu ai,35,0,CLEAN,0,2,2,0.7803,0.1009,0.1188,0.7803
+"Thật. Cho chạy án nhưng lấy tiền chạy án tái thiết lập, xây dựng xã hội tốt hơn thì ok",thật cho chạy_án nhưng lấy tiền chạy_án tái_thiết_lập xây_dựng xã_hội tốt hơn thì đồng_ý,14,0,CLEAN,0,1,1,0.8839,0.1023,0.8839,0.0138
+Nó lại dễ vl anh ạ,nó lại dễ vãi anh ạ,6,1,OFFENSIVE,1,1,0,0.99,0.99,0.0076,0.0024
+Nói gì thì nói người ta cũng giỏi đi =))) ông phân thích được như thế là ông giỏi đấy thế ông làm theo đi làm được thì giàu thì sướng ngồi phán xét người ta làm cái đ gì để người khác học mất đấy =)))),nói gì thì nói người ta cũng giỏi đi ông phân_thích được như_thế là ông giỏi đấy thế ông làm theo đi làm được thì giàu thì sướng ngồi phán_xét người ta làm cái đ gì để người khác học mất đấy,42,0,CLEAN,0,2,1,0.8717,0.0834,0.8717,0.0449
+Trên bờ thì hít khí bẩn ăn hoá chất nhé,trên bờ thì hít_khí bẩn ăn hóa_chất nhé,8,0,CLEAN,0,0,1,0.8925,0.087,0.8925,0.0205
+Thuyết cái lồn,thuyết cái lồn,3,1,OFFENSIVE,1,1,2,0.6555,0.0045,0.3401,0.6555
+Trùm cuối cmn hú vía :)),trùm cuối cmn hú_vía,4,1,OFFENSIVE,1,1,0,0.9,0.9,0.096,0.004
+Có nhiều thằng mồm thì đòi cứu cá mà tay thì xả rác ra biển thì chả ngộ :3,có nhiều thằng mồm thì đòi cứu cá mà tay thì xả rác ra biển thì chả_ngộ 3,18,0,CLEAN,0,1,2,0.6248,0.021,0.3542,0.6248
+chi oi cap chung dai e no bu co cai thao lam cho nho duoc ko chi,chi oi_cap chung dai_em no_bu co_cai thao_lam cho nho được không chi,12,0,CLEAN,0,0,1,0.7504,0.1808,0.7504,0.0688
+Huỳnh My đỉ mẹ. T vs m đi trước thời đại mất tiêu r bé 🤣,huỳnh_my đỉ mẹ tao vs mày đi trước thời_đại mất tiêu rồi bé,13,0,CLEAN,0,2,2,0.9853,0.0101,0.0046,0.9853
+VN phải có cái riêng biệt cái tự chủ độc lập toàn đi sau làm sau,vn phải có cái riêng_biệt cái tự_chủ độc_lập toàn đi sau làm sau,13,1,OFFENSIVE,1,1,0,0.9816,0.9816,0.0129,0.0055
+Dương Quỳnh anh Trung lờ đờ,dương_quỳnh anh trung_lờ đờ,4,0,CLEAN,0,0,2,0.5461,0.3529,0.1009,0.5461
+loại này cần khởi tố cách ly khỏi xã hội,loại này cần khởi_tố cách_ly khỏi xã_hội,7,0,CLEAN,0,1,1,0.4935,0.0965,0.4935,0.41
+Nguyễn Đức nhìn dị vcđ ra đẹp đ đâu,nguyễn_đức nhìn dị_vcđ ra đẹp đ đâu,7,0,CLEAN,0,1,1,0.991,0.0058,0.991,0.0032
+Nguyễn Đình Tuyên lạc hậu quá nhỉ,nguyễn_đình tuyên_lạc_hậu quá nhỉ,4,0,CLEAN,0,0,2,0.9861,0.01,0.0039,0.9861
+chú tính ăn tết trong tù à??,chú tính ăn_tết trong tù à,6,0,CLEAN,0,1,2,0.9682,0.0269,0.0048,0.9682
+"Tôi đọc tin này tôi cũng đau khổ lắm, tôi rất đau đớn và quan ngại khi hết ông tướng làm đánh bạc online giờ đến con ông trưởng CA, tôi đau lắm.",tôi đọc tin này tôi cũng đau_khổ lắm tôi rất đau_đớn và quan_ngại khi hết ông tướng làm đánh_bạc online giờ đến con ông trưởng ca tôi đau lắm,29,0,CLEAN,0,0,2,0.9048,0.0866,0.0086,0.9048
+Trend như con cật cũng đi đú,trend như con cật cũng đi đú,7,1,OFFENSIVE,1,1,0,0.9642,0.9642,0.031,0.0048
+trong khi tao đang đau đầu vì nợ nần thì chúng mày chỉ nghỉ đến việc đit nhau thôi à,trong khi tao đang đau_đầu vì nợ_nần thì chúng_mày chỉ nghỉ đến việc đit nhau thôi à,17,2,HATE,2,1,0,0.6581,0.6581,0.3236,0.0184
+Khịa 😂,khịa,1,0,CLEAN,0,1,1,0.9745,0.0211,0.9745,0.0044
+Mặc bộ đồ công an ở trong gặp biến thì lột ngay,mặc bộ_đồ công_an ở trong gặp biến thì lột ngay,10,0,CLEAN,0,0,1,0.9301,0.0633,0.9301,0.0066
+Võ Công Hoàng cái lon má,võ_công_hoàng cái lon má,4,1,OFFENSIVE,1,1,2,0.9759,0.0052,0.0188,0.9759
+Cho con Nhung đó trả 400 tỷ lại cho đất nước,cho con nhung đó trả 400 tỷ lại cho đất_nước,10,0,CLEAN,0,2,2,0.9897,0.0066,0.0037,0.9897
+con nao vay ???????????,con nao vay,3,0,CLEAN,0,1,1,0.7624,0.1237,0.7624,0.1139
+Bú bóng cao su ha gì cười ghê z abe :)),bú bóng cao_su ha gì cười ghê_vậy abe,8,2,HATE,2,2,0,0.9915,0.9915,0.0063,0.0022
+Á đù. Sinh ra đã có cặp à 🤔🤔,á_đù sinh ra đã có cặp à,7,0,CLEAN,0,0,1,0.5213,0.4696,0.5213,0.0091
+Đùa :)) nó rời khỏi eu chứ có phải nó bê cái nước nó ra khỏi châu âu đi sang châu khác k mà cứ cãi thế nhỉ ngu đ chịu được =))),đùa nó rời khỏi eu chứ có phải nó bê cái nước nó ra khỏi châu_âu đi sang châu khác không mà cứ cãi_thế nhỉ ngu đ chịu được,29,1,OFFENSIVE,1,2,2,0.9854,0.0098,0.0048,0.9854
+cái này người ta kêu là vừa ăn cắp vừa la làng,cái này người ta kêu là vừa ăn_cắp vừa la_làng,10,0,CLEAN,0,1,1,0.5845,0.408,0.5845,0.0075
+Giọng của ông này vào tuồng cải lương vai mấy bà bá hộ ác là hợp 😆,giọng của ông này vào tuồng cải_lương vai mấy bà bá hộ_ác là hợp,14,0,CLEAN,0,2,2,0.9298,0.0632,0.007,0.9298
+Ma nây giau nhieu ma che nguoi ngheo khâu nghiep qua chi oi,ma nây giau nhieu ma che nguoi ngheo khâu nghiep qua chi oi,13,0,CLEAN,0,0,1,0.8353,0.1036,0.8353,0.061
+Abe mua áo như này là chet con di me sela rồi =)),abe mua áo như này là chet con di_me sela rồi,11,1,OFFENSIVE,1,1,2,0.9111,0.018,0.0708,0.9111
+Tui puồn gke ợ 🤧,tui puồn gke ợ,4,0,CLEAN,0,0,1,0.6512,0.0432,0.6512,0.3057
+??:D??,d,1,0,CLEAN,0,0,1,0.8385,0.1514,0.8385,0.01
+đau cả rọt :))))),đau cả rọt,3,0,CLEAN,0,0,1,0.7896,0.2031,0.7896,0.0074
+Nát từ trong ra ngoài 😏😏😏,nát từ trong ra ngoài,5,0,CLEAN,0,0,1,0.9745,0.0207,0.9745,0.0047
