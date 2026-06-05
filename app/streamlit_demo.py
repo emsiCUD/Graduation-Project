@@ -15,18 +15,24 @@ import sys
 import time
 from pathlib import Path
 
-# Project-root on sys.path so `from app.predictor import …` works whether
-# Streamlit is launched from the repo root or from the app/ folder.
-_HERE = Path(__file__).resolve().parent
-_ROOT = _HERE.parent
-if str(_ROOT) not in sys.path:
-    sys.path.insert(0, str(_ROOT))
+# Put BOTH the project root and this app/ folder on sys.path.
+#
+# We import `predictor` as a *sibling* module (no `app.` prefix) on purpose:
+# `streamlit run app/streamlit_demo.py` puts the app/ folder on sys.path,
+# where the legacy `app/app.py` is importable as a top-level module named
+# `app` — which would shadow the `app` package and make `from app.predictor`
+# accidentally execute `app.py`. Sibling import sidesteps that collision.
+_HERE = Path(__file__).resolve().parent          # .../app
+_ROOT = _HERE.parent                              # project root
+for _p in (str(_ROOT), str(_HERE)):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
 
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
-from app.predictor import PhoBERTPredictor, LABEL_MAP
+from predictor import PhoBERTPredictor, LABEL_MAP   # sibling import (see note above)
 
 
 # ──────────────────────────────────────────────────────────────────
