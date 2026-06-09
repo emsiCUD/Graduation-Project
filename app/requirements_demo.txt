@@ -1,0 +1,20 @@
+# Streamlit demo dependencies — Vietnamese Toxic Comment Detection (PhoBERT).
+# Install:
+#     pip install -r app/requirements_demo.txt
+#
+# Notes on torch:
+#   - On Linux/macOS CPU-only:   pip install -r app/requirements_demo.txt
+#   - On Windows + NVIDIA GPU:   install the CUDA build of PyTorch FIRST,
+#       e.g. CUDA 12.4 wheels:
+#         pip install torch --index-url https://download.pytorch.org/whl/cu124
+#       then run pip install -r app/requirements_demo.txt as usual.
+
+streamlit>=1.49   # need the `width="stretch"` layout API (replaces deprecated use_container_width)
+torch>=2.0           # fine-tuned PhoBERT runs on torch
+transformers>=4.40   # AutoTokenizer / AutoModelForSequenceClassification
+underthesea>=6.7     # Vietnamese word segmentation in the cleaner
+plotly>=5.18         # probability bar chart
+pandas>=2.0          # general utility
+numpy>=1.24
+sentencepiece>=0.1.99  # PhoBERT tokenizer needs this on some platforms
+protobuf>=3.20         # sentencepiece transitive dep, pinned to avoid HF warnings

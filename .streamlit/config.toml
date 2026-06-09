@@ -1,0 +1,12 @@
+# Streamlit config for the Vietnamese Toxic Comment demo.
+#
+# fileWatcherType = "none" is REQUIRED here: Streamlit's default watcher
+# enumerates module paths (including `torch.classes.__path__._path`), which
+# raises and crashes the server process right after the script imports torch.
+# The symptom is "Connection error / CONNECTING" while the model is loading.
+# Disabling the watcher fixes it (we don't need hot-reload for a demo anyway).
+[server]
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

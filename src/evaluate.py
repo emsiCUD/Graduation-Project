@@ -2,8 +2,8 @@
 evaluate.py — Model evaluation utilities for ViHSD toxic-comment detection.
 
 This module is *training-agnostic*: it accepts predictions and returns
-metrics / plots / archived prediction files. The training loop lives in
-src/train.py (Week 3).
+metrics / plots / archived prediction files. Training itself lives in the
+notebooks (e.g. 03_baseline_ml, 04b_bilstm_train, 04c_phobert).
 
 Public API:
     evaluate_model        — compute metric dict
